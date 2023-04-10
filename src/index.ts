@@ -97,6 +97,10 @@ export default defineHook(({ action }, { services, logger }) => {
         auth,
       });
       logger.debug(uploadResponse.data);
+      if (uploadResponse.data.status.type !== "success") {
+        logger.error(uploadResponse.data.status.text);
+        return;
+      }
       const upload_id = uploadResponse.data.result.upload_id;
 
       // retrieve tags
@@ -110,6 +114,10 @@ export default defineHook(({ action }, { services, logger }) => {
         auth,
       });
       logger.debug(tagsResponse.data);
+      if (tagsResponse.data.status.type !== "success") {
+        logger.error(tagsResponse.data.status.text);
+        return;
+      }
       const tags = tagsResponse.data.result.tags.map((tag) => tag.tag[IMAGGA_LANGUAGE]);
 
       // update file tags
