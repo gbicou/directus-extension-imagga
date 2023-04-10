@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/gbicou/directus-extension-imagga/compare/v1.0.0...v1.0.1) (2023-04-10)
+
+
+### Bug Fixes
+
+* publish readme ([fa45e55](https://github.com/gbicou/directus-extension-imagga/commit/fa45e55dbb770c4db79cc5334fb2eca8a5ab7e69))
+
 # 1.0.0 (2023-04-10)
 
 
