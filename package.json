@@ -18,6 +18,9 @@
     "source": "src/index.ts",
     "host": "^9.24.0"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "directus-extension build",
     "dev": "directus-extension build -w --no-minify",
