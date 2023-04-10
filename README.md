@@ -43,6 +43,12 @@ Configure the extension with environment variables :
 
 Please refer to [Imagga API documentation](https://docs.imagga.com/#tags) for more information.
 
+## Demo
+
+An example of an image uploaded on a Directus instance whose tags are automatically filled in :
+
+[screencast.webm](https://user-images.githubusercontent.com/174636/230931598-7ec41c67-bcf2-4f30-b932-93d3460835aa.webm)
+
 ## License
 
 This extension is released under the MIT license. See the LICENSE file for more details.
