@@ -1,6 +1,10 @@
 {
   "name": "@bicou/directus-extension-imagga",
   "description": "Automatic image tagging of Directus files with Imagga API",
+  "homepage": "https://github.com/gbicou/directus-extension-tiptap",
+  "author": "Benjamin VIELLARD <bicou@bicou.com>",
+  "license": "MIT",
+  "repository": "github:gbicou/directus-extension-tiptap",
   "icon": "extension",
   "version": "1.0.0",
   "keywords": [
@@ -18,11 +22,14 @@
     "build": "directus-extension build",
     "dev": "directus-extension build -w --no-minify",
     "link": "directus-extension link",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "release": "semantic-release"
   },
   "devDependencies": {
     "@directus/extensions-sdk": "9.24.0",
     "@directus/tsconfig": "^0.0.6",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.57.1",
@@ -34,11 +41,16 @@
     "form-data": "^4.0.0",
     "prettier": "^2.8.7",
     "rollup-plugin-node-externals": "^5.1.2",
+    "semantic-release": "^21.0.1",
     "typescript": "^5.0.4"
   },
   "peerDependencies": {
     "axios": "^1.3.5",
     "directus": "^9.24.0",
     "form-data": "^4.0.0"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "pnpm@8.2.0"
 }
