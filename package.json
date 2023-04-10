@@ -10,7 +10,10 @@
   "keywords": [
     "directus",
     "directus-extension",
-    "directus-custom-hook"
+    "directus-custom-hook",
+    "image",
+    "tag",
+    "auto-tagging"
   ],
   "directus:extension": {
     "type": "hook",
