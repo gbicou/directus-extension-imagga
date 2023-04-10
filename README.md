@@ -47,7 +47,7 @@ Please refer to [Imagga API documentation](https://docs.imagga.com/#tags) for mo
 
 An example of an image uploaded in the file library of Directus whose tags are automatically filled in :
 
-[screencast](https://user-images.githubusercontent.com/174636/230931598-7ec41c67-bcf2-4f30-b932-93d3460835aa.webm)
+[screencast](https://user-images.githubusercontent.com/174636/230939020-6f8871fb-ba9b-4ebf-bfc0-779b8c730741.webm)
 
 ## License
 
