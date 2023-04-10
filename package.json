@@ -1,10 +1,10 @@
 {
   "name": "@bicou/directus-extension-imagga",
   "description": "Automatic image tagging of Directus files with Imagga API",
-  "homepage": "https://github.com/gbicou/directus-extension-tiptap",
+  "homepage": "https://github.com/gbicou/directus-extension-imagga",
   "author": "Benjamin VIELLARD <bicou@bicou.com>",
   "license": "MIT",
-  "repository": "github:gbicou/directus-extension-tiptap",
+  "repository": "github:gbicou/directus-extension-imagga",
   "icon": "extension",
   "version": "1.0.0",
   "keywords": [
