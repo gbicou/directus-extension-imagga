@@ -2,6 +2,7 @@ import { defineHook } from "@directus/extensions-sdk";
 import type { FilesService, AssetsService } from "directus";
 import axios from "axios";
 import FormData from "form-data";
+import { pick } from "lodash";
 
 /**
  * Imagga API endpoint
@@ -19,21 +20,31 @@ const IMAGGA_KEY = process.env.IMAGGA_KEY ?? "";
 const IMAGGA_SECRET = process.env.IMAGGA_SECRET ?? "";
 
 /**
+ * Retrieve tags
+ */
+const IMAGGA_TAGS_ENABLE = (process.env.IMAGGA_TAGS_ENABLE ?? "true") === "true";
+
+/**
  * If you’d like to get a translation of the tags in other languages, you should use the language parameter.
  * Specify the languages you want to receive your results in, separated by comma.
  */
-const IMAGGA_LANGUAGE = process.env.IMAGGA_LANGUAGE ?? "en";
+const IMAGGA_TAGS_LANGUAGE = process.env.IMAGGA_TAGS_LANGUAGE ?? "en";
 
 /**
  * Limits the number of tags in the result to the number you set.
  */
-const IMAGGA_LIMIT = process.env.IMAGGA_LIMIT ?? "-1";
+const IMAGGA_TAGS_LIMIT = process.env.IMAGGA_TAGS_LIMIT ?? "-1";
 
 /**
  * Thresholds the confidence of tags in the result to the number you set.
  * By default, all tags with confidence above 7 are being returned, and you cannot go lower than that.
  */
-const IMAGGA_THRESHOLD = process.env.IMAGGA_THRESHOLD ?? "0.0";
+const IMAGGA_TAGS_THRESHOLD = process.env.IMAGGA_TAGS_THRESHOLD ?? "0.0";
+
+/**
+ * Extract colors
+ */
+const IMAGGA_COLORS_ENABLE = (process.env.IMAGGA_COLORS_ENABLE ?? "false") === "true";
 
 /**
  * Imagga API response base
@@ -73,15 +84,52 @@ type TagsResponse = ApiResponse & {
   };
 };
 
+/**
+ * Imagga API color item
+ */
+type ColorData = {
+  // red
+  r: number;
+  // green
+  g: number;
+  // blue
+  b: number;
+  // hex code
+  html_code: string;
+  // what part of the image is in this color
+  percent: number;
+};
+
+/**
+ * Imagga API /colors response
+ */
+type ColorsResponse = ApiResponse & {
+  result: {
+    // contains the information about the color analysis of the photo
+    colors: {
+      // an array with up to 3 color results
+      background_colors: ColorData[];
+      // an array containing up to 3 color results
+      foreground_colors: ColorData[];
+      // an array containing up to 5 color results
+      image_colors: ColorData[];
+    };
+  };
+};
+
+function mapColorData(input: ColorData[]) {
+  return input.map((c) => pick(c, ["r", "g", "b", "html_code", "percent"]));
+}
+
 export default defineHook(({ action }, { services, logger }) => {
   const auth = { username: IMAGGA_KEY, password: IMAGGA_SECRET };
 
-  action("files.upload", async (meta, context) => {
-    if (meta.payload.type.startsWith("image/")) {
+  action("files.upload", async ({ payload, key }, context) => {
+    if (payload.type.startsWith("image/")) {
       // retrieve asset resized to API best pratices as a readable stream
       // @see https://docs.imagga.com/#best-practices
       const assets: AssetsService = new services.AssetsService(context);
-      const { stream } = await assets.getAsset(meta.key, {
+      const { stream } = await assets.getAsset(key, {
         key: "imagga",
         format: "jpeg",
         width: 300,
@@ -104,26 +152,56 @@ export default defineHook(({ action }, { services, logger }) => {
       const upload_id = uploadResponse.data.result.upload_id;
 
       // retrieve tags
-      const tagsResponse = await axios.get<TagsResponse>(IMAGGA_API + "/tags", {
-        params: {
-          image_upload_id: upload_id,
-          language: IMAGGA_LANGUAGE,
-          limit: IMAGGA_LIMIT,
-          threshold: IMAGGA_THRESHOLD,
-        },
-        auth,
-      });
-      logger.debug(tagsResponse.data);
-      if (tagsResponse.data.status.type !== "success") {
-        logger.error(tagsResponse.data.status.text);
-        return;
+      let tags: string[] = [];
+      if (IMAGGA_TAGS_ENABLE) {
+        const response = await axios.get<TagsResponse>(IMAGGA_API + "/tags", {
+          params: {
+            image_upload_id: upload_id,
+            language: IMAGGA_TAGS_LANGUAGE,
+            limit: IMAGGA_TAGS_LIMIT,
+            threshold: IMAGGA_TAGS_THRESHOLD,
+          },
+          auth,
+        });
+        logger.debug(response.data);
+        if (response.data.status.type !== "success") {
+          logger.error(response.data.status.text);
+          return;
+        }
+        tags = response.data.result.tags.map((tag) => tag.tag[IMAGGA_TAGS_LANGUAGE] ?? "");
       }
-      const tags = tagsResponse.data.result.tags.map((tag) => tag.tag[IMAGGA_LANGUAGE]);
 
-      // update file tags
+      // retrieve colors
+      let colors: object | undefined = undefined;
+      if (IMAGGA_COLORS_ENABLE) {
+        const response = await axios.get<ColorsResponse>(IMAGGA_API + "/colors", {
+          params: {
+            image_upload_id: upload_id,
+          },
+          auth,
+        });
+        logger.debug(response.data);
+        if (response.data.status.type !== "success") {
+          logger.error(response.data.status.text);
+          return;
+        }
+        const colorsData = response.data.result.colors;
+        colors = {
+          background: mapColorData(colorsData.background_colors),
+          foreground: mapColorData(colorsData.foreground_colors),
+          image: mapColorData(colorsData.image_colors),
+        };
+      }
+
+      // update file data
       const files: FilesService = new services.FilesService(context);
-      const tagsMeta: string[] = meta.tags ?? [];
-      await files.updateOne(meta.key, { tags: [...tagsMeta, ...tags] }, { emitEvents: false });
+      const payloadTags: string[] = payload.tags ?? [];
+      const payloadMetadata = payload.metadata ?? {};
+      await files.updateOne(
+        key,
+        { tags: [...payloadTags, ...tags], metadata: { ...payloadMetadata, colors } },
+        { emitEvents: false }
+      );
 
       // delete uploaded file to imagga
       await axios.delete(IMAGGA_API + "/uploads/" + upload_id, {
