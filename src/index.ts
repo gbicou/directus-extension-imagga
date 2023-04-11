@@ -124,6 +124,11 @@ export default defineHook(({ action }, { services, logger }) => {
       const files: FilesService = new services.FilesService(context);
       const tagsMeta: string[] = meta.tags ?? [];
       await files.updateOne(meta.key, { tags: [...tagsMeta, ...tags] }, { emitEvents: false });
+
+      // delete uploaded file to imagga
+      await axios.delete(IMAGGA_API + "/uploads/" + upload_id, {
+        auth,
+      });
     }
   });
 });
