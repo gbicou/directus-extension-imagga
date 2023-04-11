@@ -13,7 +13,8 @@
     "directus-custom-hook",
     "image",
     "tag",
-    "auto-tagging"
+    "auto-tagging",
+    "imagga"
   ],
   "directus:extension": {
     "type": "hook",
