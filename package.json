@@ -33,10 +33,9 @@
     "release": "semantic-release"
   },
   "devDependencies": {
+    "@bicou/semantic-release": "^1.0.1",
     "@directus/extensions-sdk": "9.24.0",
     "@directus/tsconfig": "^0.0.6",
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/git": "^10.0.1",
     "@types/lodash": "^4.14.192",
     "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
