@@ -11,7 +11,7 @@ This is a [Directus](https://directus.io/) hook for file uploads to automaticall
 
 ## Requirements
 
-This extension requires Directus 9 or higher to be installed.
+This extension requires Directus 10 or higher to be installed.
 
 ## Installation
 
