@@ -1,8 +1,8 @@
 import { defineHook } from "@directus/extensions-sdk";
-import type { FilesService, AssetsService } from "directus";
+import type { FilesService, AssetsService } from "@directus/api";
 import axios from "axios";
 import FormData from "form-data";
-import { pick } from "lodash";
+import { pick } from "lodash-es";
 
 /**
  * Imagga API endpoint
