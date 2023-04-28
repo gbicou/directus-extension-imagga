@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/gbicou/directus-extension-imagga/compare/v1.1.0...v1.2.0) (2023-04-28)
+
+
+### Features
+
+* upgrade to directus v10 ([afa7530](https://github.com/gbicou/directus-extension-imagga/commit/afa75306b16ed960825c9a2ceafae8d5eb095841)), closes [#9](https://github.com/gbicou/directus-extension-imagga/issues/9) [#8](https://github.com/gbicou/directus-extension-imagga/issues/8) [#7](https://github.com/gbicou/directus-extension-imagga/issues/7) [#5](https://github.com/gbicou/directus-extension-imagga/issues/5) [#4](https://github.com/gbicou/directus-extension-imagga/issues/4)
+
 # [1.1.0](https://github.com/gbicou/directus-extension-imagga/compare/v1.0.1...v1.1.0) (2023-04-11)
 
 
