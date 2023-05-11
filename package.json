@@ -55,7 +55,7 @@
     "form-data": "4.0.0",
     "lodash-es": "4.17.21",
     "prettier": "^2.8.8",
-    "rollup-plugin-node-externals": "^5.1.2",
+    "rollup-plugin-node-externals": "^6.0.0",
     "semantic-release": "^21.0.1",
     "typescript": "^5.0.4",
     "unbuild": "^1.2.1"
