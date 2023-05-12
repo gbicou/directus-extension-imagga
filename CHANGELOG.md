@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/gbicou/directus-extension-imagga/compare/v1.2.0...v1.2.1) (2023-05-12)
+
+
+### Bug Fixes
+
+* use ESM build format ([d9f83f0](https://github.com/gbicou/directus-extension-imagga/commit/d9f83f0a9a66d6da04110b93418915b4f7c4c4d1))
+
 # [1.2.0](https://github.com/gbicou/directus-extension-imagga/compare/v1.1.0...v1.2.0) (2023-04-28)
 
 
