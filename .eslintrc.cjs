@@ -5,7 +5,12 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["@typescript-eslint"],
-  extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
+  extends: [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:unicorn/recommended",
+    "plugin:prettier/recommended",
+  ],
   rules: {},
   env: {
     browser: true,

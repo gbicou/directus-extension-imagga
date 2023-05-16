@@ -172,7 +172,7 @@ export default defineHook(({ action }, { services, logger }) => {
       }
 
       // retrieve colors
-      let colors: object | undefined = undefined;
+      let colors: object | undefined;
       if (IMAGGA_COLORS_ENABLE) {
         const response = await axios.get<ColorsResponse>(IMAGGA_API + "/colors", {
           params: {
