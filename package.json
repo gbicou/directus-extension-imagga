@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@bicou/semantic-release": "^1.0.1",
-    "@directus/api": "^10.1.0",
+    "@directus/api": "^11.0.0",
     "@directus/extensions-sdk": "^10.1.0",
     "@directus/tsconfig": "^0.0.7",
     "@types/lodash-es": "^4.17.7",
@@ -54,7 +54,7 @@
     "typescript": "^5.0.4"
   },
   "peerDependencies": {
-    "@directus/api": "^10.0.0",
+    "@directus/api": "^10.0.0 || ^11.0.0",
     "@directus/extensions-sdk": "^10.0.0",
     "axios": "~1.3.6",
     "form-data": "4.0.0",
