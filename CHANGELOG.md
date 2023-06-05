@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/gbicou/directus-extension-imagga/compare/v1.2.1...v1.2.2) (2023-06-05)
+
+
+### Bug Fixes
+
+* asset service transformation parameters ([3dacb73](https://github.com/gbicou/directus-extension-imagga/commit/3dacb73cc000bd7e23ee99af38dbee37638167bf))
+
 ## [1.2.1](https://github.com/gbicou/directus-extension-imagga/compare/v1.2.0...v1.2.1) (2023-05-12)
 
 
