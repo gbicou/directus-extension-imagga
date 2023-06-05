@@ -130,12 +130,14 @@ export default defineHook(({ action }, { services, logger }) => {
       // @see https://docs.imagga.com/#best-practices
       const assets: AssetsService = new services.AssetsService(context);
       const { stream } = await assets.getAsset(key, {
-        key: "imagga",
-        format: "jpeg",
-        width: 300,
-        height: 300,
-        fit: "outside",
-        withoutEnlargement: true,
+        transformationParams: {
+          key: "imagga",
+          format: "jpeg",
+          width: 300,
+          height: 300,
+          fit: "outside",
+          withoutEnlargement: true,
+        },
       });
 
       // upload asset to imagga upload service
