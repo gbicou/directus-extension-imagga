@@ -2,7 +2,6 @@ import { defineHook } from "@directus/extensions-sdk";
 import type { FilesService, AssetsService } from "@directus/api";
 import axios from "axios";
 import FormData from "form-data";
-import { pick } from "lodash-es";
 
 /**
  * Imagga API endpoint
@@ -118,7 +117,13 @@ type ColorsResponse = ApiResponse & {
 };
 
 function mapColorData(input: ColorData[]) {
-  return input.map((c) => pick(c, ["r", "g", "b", "html_code", "percent"]));
+  return input.map(({ r, g, b, html_code, percent }) => ({
+    r,
+    g,
+    b,
+    html_code,
+    percent,
+  }));
 }
 
 export default defineHook(({ action }, { services, logger }) => {
