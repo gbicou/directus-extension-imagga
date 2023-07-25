@@ -15,8 +15,8 @@ devDependencies:
     specifier: ^10.1.5
     version: 10.1.5(@types/node@18.16.19)
   '@directus/tsconfig':
-    specifier: ^0.0.7
-    version: 0.0.7
+    specifier: ^1.0.0
+    version: 1.0.0
   '@types/node':
     specifier: ^18.16.19
     version: 18.16.19
@@ -1754,8 +1754,8 @@ packages:
     resolution: {integrity: sha512-qzbBevmIjg+h1pUFDZ5BTUvlEyioWoF3F8297uG4mySYY4SaA86/1rRqQbo4hFiVglmG837JU4A5UKNV4A8FCg==}
     dev: true
 
-  /@directus/tsconfig@0.0.7:
-    resolution: {integrity: sha512-0h9GOyLFl1ylcZYLi3zNik+/DorFTtywsJl7RIVsy9pdL1cL/jewKT9L0yShDvbmN/kenPSlXC8qmqmz1NPhHA==}
+  /@directus/tsconfig@1.0.0:
+    resolution: {integrity: sha512-aDlUyhxEsqCzqHTdHMVsbAs3kgLeZrEW2V17Yp5oMpplBAKLbHUFuY00TxntERyUL31FZNDSMHW9bhsA4WmvyA==}
     dev: true
 
   /@directus/types@10.1.2:
