@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@bicou/semantic-release": "^1.0.1",
-    "@directus/api": "^12.0.2",
+    "@directus/api": "^13.0.0",
     "@directus/extensions-sdk": "^10.1.5",
     "@directus/tsconfig": "^0.0.7",
     "@types/node": "^18.16.19",
