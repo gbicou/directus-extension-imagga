@@ -34,31 +34,31 @@
   },
   "devDependencies": {
     "@bicou/semantic-release": "^1.0.1",
-    "@directus/api": "^12.0.2",
-    "@directus/extensions-sdk": "^10.1.5",
-    "@directus/tsconfig": "^0.0.7",
-    "@types/node": "^18.16.19",
-    "@typescript-eslint/eslint-plugin": "^5.61.0",
-    "@typescript-eslint/parser": "^5.61.0",
+    "@directus/api": "^13.1.0",
+    "@directus/extensions-sdk": "^10.1.10",
+    "@directus/tsconfig": "^1.0.0",
+    "@types/node": "^20.6.3",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
     "axios": "~1.4.0",
-    "eslint": "^8.44.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-unicorn": "^47.0.0",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-unicorn": "^48.0.1",
     "form-data": "4.0.0",
-    "prettier": "^2.8.8",
+    "prettier": "^3.0.3",
     "rollup-plugin-node-externals": "^6.1.1",
-    "semantic-release": "^21.0.7",
-    "typescript": "^5.1.6"
+    "semantic-release": "^22.0.0",
+    "typescript": "^5.2.2"
   },
   "peerDependencies": {
-    "@directus/api": "^12.0.2",
-    "@directus/extensions-sdk": "^10.1.5",
+    "@directus/api": "^13.1.0",
+    "@directus/extensions-sdk": "^10.1.10",
     "axios": "~1.4.0",
     "form-data": "4.0.0"
   },
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "pnpm@8.6.6"
+  "packageManager": "pnpm@8.7.6"
 }

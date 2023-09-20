@@ -207,7 +207,7 @@ export default defineHook(({ action }, { services, logger }) => {
       await files.updateOne(
         key,
         { tags: [...payloadTags, ...tags], metadata: { ...payloadMetadata, colors } },
-        { emitEvents: false }
+        { emitEvents: false },
       );
 
       // delete uploaded file to imagga
