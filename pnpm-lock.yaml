@@ -27,8 +27,8 @@ devDependencies:
     specifier: ^6.7.2
     version: 6.7.2(eslint@8.49.0)(typescript@5.2.2)
   axios:
-    specifier: ~1.4.0
-    version: 1.4.0
+    specifier: ~1.6.0
+    version: 1.6.0
   eslint:
     specifier: ^8.49.0
     version: 8.49.0
@@ -3727,6 +3727,16 @@ packages:
       - debug
     dev: true
 
+  /axios@1.6.0:
+    resolution: {integrity: sha512-EZ1DYihju9pwVB+jg67ogm+Tmqc6JmhamRN6I4Zt8DfZu5lbcQGw3ozH9lFejSJgs/ibaef3A9PMXPLeefFGJg==}
+    dependencies:
+      follow-redirects: 1.15.2
+      form-data: 4.0.0
+      proxy-from-env: 1.1.0
+    transitivePeerDependencies:
+      - debug
+    dev: true
+
   /b4a@1.6.4:
     resolution: {integrity: sha512-fpWrvyVHEKyeEvbKZTVOeZF3VSKKWtJxFIxX/jaVPf+cLbGUSitjb49pHLqPV2BUNNZ0LcoeEGfE/YCpyDYHIw==}
     dev: true
@@ -7334,7 +7344,7 @@ packages:
     resolution: {integrity: sha512-po/KtofzrTuKhHLenbmliDsVVOFANwcfDFUGnggwnyZJmZz7JgBlV6nzK9o2Fk+OK2SiBmJTK25RbkAj57Hd+Q==}
     requiresBuild: true
     dependencies:
-      axios: 1.4.0
+      axios: 1.6.0
       base-64: 1.0.0
       url-join: 4.0.1
     transitivePeerDependencies:
