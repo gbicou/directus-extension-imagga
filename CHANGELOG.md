@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/gbicou/directus-extension-imagga/compare/v1.2.2...v1.3.0) (2023-11-26)
+
+
+### Features
+
+* upgrade directus api to v14 ([075c445](https://github.com/gbicou/directus-extension-imagga/commit/075c44585ebc57f7811c91ec9a6b0c8089abf146))
+
 ## [1.2.2](https://github.com/gbicou/directus-extension-imagga/compare/v1.2.1...v1.2.2) (2023-06-05)
 
 
