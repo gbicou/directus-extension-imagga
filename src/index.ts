@@ -1,5 +1,5 @@
 import { defineHook } from "@directus/extensions-sdk";
-import type { FilesService, AssetsService } from "@directus/api";
+import { AssetsService, FilesService } from "@directus/api/services";
 import axios from "axios";
 import FormData from "form-data";
 

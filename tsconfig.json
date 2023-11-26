@@ -3,7 +3,8 @@
   "compilerOptions": {
     "noPropertyAccessFromIndexSignature": false,
     "declaration": false,
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "esModuleInterop": true
   },
   "include": ["./src/**/*.ts"]
 }
