@@ -1,15 +1,11 @@
 name: Release
 on:
-  workflow_dispatch:
   push:
     branches:
       - 'main'
-      - 'next'
-      - 'next-major'
-      - 'alpha'
-      - 'beta'
-      - '*.x'
-      - '*.*.x'
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
 jobs:
   release:
     name: Release
@@ -17,8 +13,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2
@@ -35,8 +29,12 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Release
+      - name: Create Release Pull Request or Publish to npm
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          publish: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: pnpm release
+
