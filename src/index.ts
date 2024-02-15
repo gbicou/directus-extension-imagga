@@ -184,6 +184,10 @@ export default defineHook(({ action }, { services, logger }) => {
       // retrieve colors
       let colors: object | undefined;
       if (IMAGGA_COLORS_ENABLE) {
+        // wait 1 second to avoid rate limiting
+        if (IMAGGA_TAGS_ENABLE) await new Promise((resolve) => setTimeout(resolve, 1000));
+
+        // imagga api call
         const response = await axios.get<ColorsResponse>(IMAGGA_API + "/colors", {
           params: {
             image_upload_id: upload_id,
