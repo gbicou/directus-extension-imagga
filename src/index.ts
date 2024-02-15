@@ -1,3 +1,4 @@
+import { useEnv } from "@directus/env";
 import { defineHook } from "@directus/extensions-sdk";
 import { AssetsService, FilesService } from "@directus/api/services";
 import axios from "axios";
@@ -7,43 +8,6 @@ import FormData from "form-data";
  * Imagga API endpoint
  */
 const IMAGGA_API = "https://api.imagga.com/v2";
-
-/**
- * Imagga API key
- */
-const IMAGGA_KEY = process.env.IMAGGA_KEY ?? "";
-
-/**
- * Imagga API secret
- */
-const IMAGGA_SECRET = process.env.IMAGGA_SECRET ?? "";
-
-/**
- * Retrieve tags
- */
-const IMAGGA_TAGS_ENABLE = (process.env.IMAGGA_TAGS_ENABLE ?? "true") === "true";
-
-/**
- * If you’d like to get a translation of the tags in other languages, you should use the language parameter.
- * Specify the languages you want to receive your results in, separated by comma.
- */
-const IMAGGA_TAGS_LANGUAGE = process.env.IMAGGA_TAGS_LANGUAGE ?? "en";
-
-/**
- * Limits the number of tags in the result to the number you set.
- */
-const IMAGGA_TAGS_LIMIT = process.env.IMAGGA_TAGS_LIMIT ?? "-1";
-
-/**
- * Thresholds the confidence of tags in the result to the number you set.
- * By default, all tags with confidence above 7 are being returned, and you cannot go lower than that.
- */
-const IMAGGA_TAGS_THRESHOLD = process.env.IMAGGA_TAGS_THRESHOLD ?? "0.0";
-
-/**
- * Extract colors
- */
-const IMAGGA_COLORS_ENABLE = (process.env.IMAGGA_COLORS_ENABLE ?? "false") === "true";
 
 /**
  * Imagga API response base
@@ -127,6 +91,45 @@ function mapColorData(input: ColorData[]) {
 }
 
 export default defineHook(({ action }, { services, logger }) => {
+  const environment = useEnv();
+
+  /**
+   * Imagga API key
+   */
+  const IMAGGA_KEY = (environment["IMAGGA_KEY"] as string) ?? "";
+
+  /**
+   * Imagga API secret
+   */
+  const IMAGGA_SECRET = (environment["IMAGGA_SECRET"] as string) ?? "";
+
+  /**
+   * Retrieve tags
+   */
+  const IMAGGA_TAGS_ENABLE = environment["IMAGGA_TAGS_ENABLE"] as boolean;
+
+  /**
+   * If you’d like to get a translation of the tags in other languages, you should use the language parameter.
+   * Specify the languages you want to receive your results in, separated by comma.
+   */
+  const IMAGGA_TAGS_LANGUAGE = environment["IMAGGA_TAGS_LANGUAGE"] as string;
+
+  /**
+   * Limits the number of tags in the result to the number you set.
+   */
+  const IMAGGA_TAGS_LIMIT = (environment["IMAGGA_TAGS_LIMIT"] as string) ?? "-1";
+
+  /**
+   * Thresholds the confidence of tags in the result to the number you set.
+   * By default, all tags with confidence above 7 are being returned, and you cannot go lower than that.
+   */
+  const IMAGGA_TAGS_THRESHOLD = (environment["IMAGGA_TAGS_THRESHOLD"] as string) ?? "0.0";
+
+  /**
+   * Extract colors
+   */
+  const IMAGGA_COLORS_ENABLE = environment["IMAGGA_COLORS_ENABLE"] as boolean;
+
   const auth = { username: IMAGGA_KEY, password: IMAGGA_SECRET };
 
   action("files.upload", async ({ payload, key }, context) => {
