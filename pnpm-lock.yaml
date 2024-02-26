@@ -27,7 +27,7 @@ devDependencies:
     version: 1.0.2(vue@3.4.19)
   '@directus/extensions-sdk':
     specifier: ^10.3.3
-    version: 10.3.3(@types/node@20.11.19)(@unhead/vue@1.8.10)(knex@3.1.0)(mysql@2.18.1)(pg@8.11.3)(pinia@2.1.7)(pino@8.18.0)(sqlite3@5.1.7)(tedious@16.7.1)(typescript@5.3.3)
+    version: 10.3.4(@types/node@20.11.19)(@unhead/vue@1.8.10)(pg@8.11.3)(pinia@2.1.7)(typescript@5.3.3)
   '@directus/tsconfig':
     specifier: ^1.0.1
     version: 1.0.1
@@ -1462,6 +1462,21 @@ packages:
     resolution: {integrity: sha512-LfKniScNZEJOnDbCFPxPP+L/flSLlT8PJZZ4kHyfdiyEkBMrcGgcP7HcabHRekHVYiK5foo7ZEsmDhhPzx4dEQ==}
     dev: true
 
+  /@directus/composables@10.1.10(vue@3.4.19):
+    resolution: {integrity: sha512-6GfnYI/Bsj8VQz2eltcymclg4dSHNsvlddR3m/PnPEoHyMZgfQ4XagqcaQVG3EUSO5DP7EjV+TIX0CKAAd7niQ==}
+    peerDependencies:
+      vue: ^3.4
+    dependencies:
+      '@directus/constants': 11.0.3
+      '@directus/utils': 11.0.5(vue@3.4.19)
+      axios: 1.6.7
+      lodash-es: 4.17.21
+      nanoid: 5.0.6
+      vue: 3.4.19(typescript@5.3.3)
+    transitivePeerDependencies:
+      - debug
+    dev: true
+
   /@directus/composables@10.1.9(vue@3.4.19):
     resolution: {integrity: sha512-M5RIB6lgca7Aybocba8D8Hqp7/ZZPGFyzpdZttMn1XJHD+ITrOXK+O+bl6iTXnwOqjX95o983iZyJ42c9odORQ==}
     peerDependencies:
@@ -1554,6 +1569,61 @@ packages:
       - vue-router
     dev: true
 
+  /@directus/extensions-sdk@10.3.4(@types/node@20.11.19)(@unhead/vue@1.8.10)(pg@8.11.3)(pinia@2.1.7)(typescript@5.3.3):
+    resolution: {integrity: sha512-r7/0x8fMmyC+CPADfPWz44frEJxs8Ms3wmIqq8uiWhUVASKpL6Ah+CVzJTudcfAVDXiEkA8E0Tjbr+mwxofibw==}
+    engines: {node: '>=12.20.0'}
+    hasBin: true
+    dependencies:
+      '@directus/composables': 10.1.10(vue@3.4.19)
+      '@directus/constants': 11.0.3
+      '@directus/extensions': 0.3.3(@unhead/vue@1.8.10)(pg@8.11.3)(pinia@2.1.7)(vue@3.4.19)
+      '@directus/themes': 0.3.4(@unhead/vue@1.8.10)(pinia@2.1.7)(vue@3.4.19)
+      '@directus/types': 11.0.6(knex@3.1.0)(mysql@2.18.1)(pg@8.11.3)(sqlite3@5.1.7)(tedious@16.7.1)(vue@3.4.19)
+      '@directus/utils': 11.0.5(vue@3.4.19)
+      '@rollup/plugin-commonjs': 25.0.7(rollup@3.29.4)
+      '@rollup/plugin-json': 6.1.0(rollup@3.29.4)
+      '@rollup/plugin-node-resolve': 15.2.3(rollup@3.29.4)
+      '@rollup/plugin-replace': 5.0.5(rollup@3.29.4)
+      '@rollup/plugin-terser': 0.4.4(rollup@3.29.4)
+      '@rollup/plugin-virtual': 3.0.2(rollup@3.29.4)
+      '@vitejs/plugin-vue': 4.6.2(vite@4.5.2)(vue@3.4.19)
+      chalk: 5.3.0
+      commander: 10.0.1
+      esbuild: 0.17.19
+      execa: 7.2.0
+      fs-extra: 11.2.0
+      inquirer: 9.2.15
+      ora: 6.3.1
+      rollup: 3.29.4
+      rollup-plugin-esbuild: 5.0.0(esbuild@0.17.19)(rollup@3.29.4)
+      rollup-plugin-styles: 4.0.0(rollup@3.29.4)
+      vite: 4.5.2(@types/node@20.11.19)
+      vue: 3.4.19(typescript@5.3.3)
+    transitivePeerDependencies:
+      - '@types/node'
+      - '@unhead/vue'
+      - better-sqlite3
+      - debug
+      - knex
+      - less
+      - lightningcss
+      - mysql
+      - mysql2
+      - pg
+      - pg-native
+      - pinia
+      - pino
+      - sass
+      - sqlite3
+      - stylus
+      - sugarss
+      - supports-color
+      - tedious
+      - terser
+      - typescript
+      - vue-router
+    dev: true
+
   /@directus/extensions@0.3.2(@unhead/vue@1.8.10)(knex@3.1.0)(mysql@2.18.1)(pg@8.11.3)(pinia@2.1.7)(pino@8.18.0)(sqlite3@5.1.7)(tedious@16.7.1)(vue@3.4.19):
     resolution: {integrity: sha512-GRLiH5mqqoOFESeInBE33/qsIiYJ0J0DWNK+tufftFMsv4u95tc7msTBI4qSUiGvF350eTUCCuCRqmACYSon7A==}
     peerDependencies:
@@ -1580,6 +1650,45 @@ packages:
       knex: 3.1.0(mysql@2.18.1)(pg@8.11.3)(sqlite3@5.1.7)(tedious@16.7.1)
       lodash-es: 4.17.21
       pino: 8.18.0
+      vue: 3.4.19(typescript@5.3.3)
+      zod: 3.22.4
+    transitivePeerDependencies:
+      - '@unhead/vue'
+      - better-sqlite3
+      - mysql
+      - mysql2
+      - pg
+      - pg-native
+      - pinia
+      - sqlite3
+      - supports-color
+      - tedious
+    dev: true
+
+  /@directus/extensions@0.3.3(@unhead/vue@1.8.10)(pg@8.11.3)(pinia@2.1.7)(vue@3.4.19):
+    resolution: {integrity: sha512-uWEVaE91XyPupalY21ds/fdpDnQpCkJwKKc2lYBevxn0oHZxGQ7fqW+M5z+DF+azISXeoCcV27Jw8dJN4e7CNw==}
+    peerDependencies:
+      knex: '3'
+      pino: '8'
+      vue: ^3.4
+      vue-router: '4'
+    peerDependenciesMeta:
+      knex:
+        optional: true
+      pino:
+        optional: true
+      vue:
+        optional: true
+      vue-router:
+        optional: true
+    dependencies:
+      '@directus/constants': 11.0.3
+      '@directus/themes': 0.3.4(@unhead/vue@1.8.10)(pinia@2.1.7)(vue@3.4.19)
+      '@directus/types': 11.0.6(knex@3.1.0)(mysql@2.18.1)(pg@8.11.3)(sqlite3@5.1.7)(tedious@16.7.1)(vue@3.4.19)
+      '@directus/utils': 11.0.5(vue@3.4.19)
+      '@types/express': 4.17.21
+      fs-extra: 11.2.0
+      lodash-es: 4.17.21
       vue: 3.4.19(typescript@5.3.3)
       zod: 3.22.4
     transitivePeerDependencies:
@@ -7465,6 +7574,27 @@ packages:
       wrap-ansi: 6.2.0
     dev: true
 
+  /inquirer@9.2.15:
+    resolution: {integrity: sha512-vI2w4zl/mDluHt9YEQ/543VTCwPKWiHzKtm9dM2V0NdFcqEexDAjUHzO1oA60HRNaVifGXXM1tRRNluLVHa0Kg==}
+    engines: {node: '>=18'}
+    dependencies:
+      '@ljharb/through': 2.3.12
+      ansi-escapes: 4.3.2
+      chalk: 5.3.0
+      cli-cursor: 3.1.0
+      cli-width: 4.1.0
+      external-editor: 3.1.0
+      figures: 3.2.0
+      lodash: 4.17.21
+      mute-stream: 1.0.0
+      ora: 5.4.1
+      run-async: 3.0.0
+      rxjs: 7.8.1
+      string-width: 4.2.3
+      strip-ansi: 6.0.1
+      wrap-ansi: 6.2.0
+    dev: true
+
   /internal-slot@1.0.7:
     resolution: {integrity: sha512-NGnrKwXzSms2qUUih/ILZ5JBqNTSa1+ZmP6flaIp6KmSElgE9qdndzS3cqjrDovwFdmwsGsLdeFgB6suw+1e9g==}
     engines: {node: '>= 0.4'}
@@ -8591,6 +8721,12 @@ packages:
 
   /nanoid@5.0.5:
     resolution: {integrity: sha512-/Veqm+QKsyMY3kqi4faWplnY1u+VuKO3dD2binyPIybP31DRO29bPF+1mszgLnrR2KqSLceFLBNw0zmvDzN1QQ==}
+    engines: {node: ^18 || >=20}
+    hasBin: true
+    dev: true
+
+  /nanoid@5.0.6:
+    resolution: {integrity: sha512-rRq0eMHoGZxlvaFOUdK1Ev83Bd1IgzzR+WJ3IbDJ7QOSdAxYjlurSPqFs9s4lJg29RT6nPwizFtJhQS6V5xgiA==}
     engines: {node: ^18 || >=20}
     hasBin: true
     dev: true
