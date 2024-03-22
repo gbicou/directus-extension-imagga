@@ -1,6 +1,6 @@
 import { useEnv } from "@directus/env";
 import { defineHook } from "@directus/extensions-sdk";
-import { AssetsService, FilesService } from "@directus/api/services";
+import { AssetsService, FilesService } from "@directus/api/services/index";
 import axios from "axios";
 import FormData from "form-data";
 
