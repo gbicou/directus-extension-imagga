@@ -1,5 +1,11 @@
 # [1.3.0](https://github.com/gbicou/directus-extension-imagga/compare/v1.2.2...v1.3.0) (2023-11-26)
 
+## 1.6.0
+
+### Minor Changes
+
+- [`2a10ab4`](https://github.com/gbicou/directus-extension-imagga/commit/2a10ab48837568a6bf27cfc51d42cfa5b352b63e) Thanks [@gbicou](https://github.com/gbicou)! - upgrade dependencies
+
 ## 1.5.0
 
 ### Minor Changes
