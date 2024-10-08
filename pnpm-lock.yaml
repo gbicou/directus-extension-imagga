@@ -26,7 +26,7 @@ importers:
         version: 22.2.0(@types/node@22.7.4)(@unhead/vue@1.11.7(vue@3.4.27(typescript@5.6.2)))(encoding@0.1.13)(lodash@4.17.21)(pinia@2.2.4(typescript@5.6.2)(vue@3.4.27(typescript@5.6.2)))(terser@5.34.1)(typescript@5.6.2)(vue@3.4.27(typescript@5.6.2))
       '@directus/env':
         specifier: ^3.1.0
-        version: 3.1.0(vue@3.4.27(typescript@5.6.2))
+        version: 3.1.1(vue@3.4.27(typescript@5.6.2))
       '@directus/extensions-sdk':
         specifier: ^12.0.2
         version: 12.0.2(@types/node@22.7.4)(@unhead/vue@1.11.7(vue@3.4.27(typescript@5.6.2)))(knex@3.1.0(mysql2@3.11.0)(pg@8.12.0)(sqlite3@5.1.7)(tedious@18.2.0))(mysql2@3.11.0)(pg@8.12.0)(pinia@2.2.4(typescript@5.6.2)(vue@3.4.27(typescript@5.6.2)))(pino@9.2.0)(sqlite3@5.1.7)(tedious@18.2.0)(terser@5.34.1)(typescript@5.6.2)
@@ -534,6 +534,9 @@ packages:
   '@directus/env@3.1.0':
     resolution: {integrity: sha512-i76tnwjcvjj+dN8AAR/xfffj2Dkrk2XLCEIWZ/wT1MEEFlsByz/XE06xzZaM8zEhcZuDbTJnoLuQYK083ZvB9Q==}
 
+  '@directus/env@3.1.1':
+    resolution: {integrity: sha512-8hwOIqQVsO83WrSSEhAFPr6whj0Uvbnk8aooTk8wyJ0Nt/RsoRuHDrxcqiNwJo+rHPwI1Qw13xvPvU9OUizobg==}
+
   '@directus/errors@1.0.0':
     resolution: {integrity: sha512-J9LA2ro4STS7JGsE5ERb01hTD/otQlRkw4PhbTF/7BXbhTVkagEYrBkCoqjMOysFB+zPHqii5Dc7RVNsjraxzA==}
 
@@ -628,6 +631,14 @@ packages:
 
   '@directus/utils@12.0.0':
     resolution: {integrity: sha512-DHii1PaEpDv8aIbTZGP5cD8cAd4M575eKKqmJBgD7W+WdxwPgzg/PZuTTmEV8YZ4zOn0+kyjxLMDlCXsTuZsHQ==}
+    peerDependencies:
+      vue: ^3.4
+    peerDependenciesMeta:
+      vue:
+        optional: true
+
+  '@directus/utils@12.0.1':
+    resolution: {integrity: sha512-yi3lNOPr7vnBUv44DRDWcbTOXHVK+V4RKsmWbM2bKmiXob7CXDrtWkw9ToWNEXytC0G/QOH5VbLo1k0ASH2wqA==}
     peerDependencies:
       vue: ^3.4
     peerDependenciesMeta:
@@ -2868,6 +2879,9 @@ packages:
 
   date-fns@3.6.0:
     resolution: {integrity: sha512-fRHTG8g/Gif+kSh50gaGEdToemgfj74aRX3swtiouboip5JDLAyDE9F11nHMIcvOaXeOC6D7SpNhi7uFyB7Uww==}
+
+  date-fns@4.1.0:
+    resolution: {integrity: sha512-Ukq0owbQXxa/U3EGtsdVBkR1w7KOQ5gIBqdH2hkvknzZPYvBxb/aa6E8L7tmjFtkwZBu3UXBbjIgPo/Ez4xaNg==}
 
   dateformat@4.6.3:
     resolution: {integrity: sha512-2P0p0pFGzHS5EMnhdxQi7aJN+iMheud0UhG4dlE1DLAlvL8JHjJJTX/CSm4JXwV0Ka5nGk3zC5mcb5bUQUxxMA==}
@@ -7344,6 +7358,15 @@ snapshots:
     transitivePeerDependencies:
       - vue
 
+  '@directus/env@3.1.1(vue@3.4.27(typescript@5.6.2))':
+    dependencies:
+      '@directus/constants': 12.0.0
+      '@directus/utils': 12.0.1(vue@3.4.27(typescript@5.6.2))
+      dotenv: 16.4.5
+      lodash-es: 4.17.21
+    transitivePeerDependencies:
+      - vue
+
   '@directus/errors@1.0.0':
     dependencies:
       '@directus/storage': 11.0.0
@@ -7592,6 +7615,19 @@ snapshots:
       '@directus/constants': 12.0.0
       '@directus/system-data': 2.0.0
       date-fns: 3.6.0
+      fs-extra: 11.2.0
+      joi: 17.13.3
+      js-yaml: 4.1.0
+      lodash-es: 4.17.21
+      micromustache: 8.0.3
+    optionalDependencies:
+      vue: 3.4.27(typescript@5.6.2)
+
+  '@directus/utils@12.0.1(vue@3.4.27(typescript@5.6.2))':
+    dependencies:
+      '@directus/constants': 12.0.0
+      '@directus/system-data': 2.0.0
+      date-fns: 4.1.0
       fs-extra: 11.2.0
       joi: 17.13.3
       js-yaml: 4.1.0
@@ -9796,6 +9832,8 @@ snapshots:
   dataloader@1.4.0: {}
 
   date-fns@3.6.0: {}
+
+  date-fns@4.1.0: {}
 
   dateformat@4.6.3: {}
 
