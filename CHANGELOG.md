@@ -1,5 +1,11 @@
 # [1.3.0](https://github.com/gbicou/directus-extension-imagga/compare/v1.2.2...v1.3.0) (2023-11-26)
 
+## 1.6.1
+
+### Patch Changes
+
+- [`21d9d0a`](https://github.com/gbicou/directus-extension-imagga/commit/21d9d0aca30e976a63fc608ecd1fc6ca127baf38) Thanks [@gbicou](https://github.com/gbicou)! - pin and upgrade deps
+
 ## 1.6.0
 
 ### Minor Changes
