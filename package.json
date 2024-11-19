@@ -43,7 +43,7 @@
     "@directus/env": "3.1.1",
     "@directus/extensions-sdk": "12.1.0",
     "@directus/tsconfig": "2.0.0",
-    "@stylistic/eslint-plugin": "2.9.0",
+    "@stylistic/eslint-plugin": "2.11.0",
     "@types/node": "20.16.13",
     "eslint": "9.13.0",
     "eslint-plugin-unicorn": "56.0.0",
