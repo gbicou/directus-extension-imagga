@@ -5,11 +5,6 @@ import axios from 'axios'
 import FormData from 'form-data'
 
 /**
- * Imagga API endpoint
- */
-const IMAGGA_API = 'https://api.imagga.com/v2'
-
-/**
  * Imagga API response base
  */
 interface ApiResponse {
@@ -92,6 +87,11 @@ function mapColorData(input: ColorData[]) {
 
 export default defineHook(({ action }, { services, logger }) => {
   const environment = useEnv()
+
+  /**
+   * Imagga API endpoint
+   */
+  const IMAGGA_API = (environment['IMAGGA_API'] as string) ?? 'https://api.imagga.com/v2'
 
   /**
    * Imagga API key
