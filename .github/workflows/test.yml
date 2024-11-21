@@ -2,8 +2,9 @@ name: Test
 
 on:
   push:
-    branches:
-      - master # or any branch you want to trigger the publish
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   build-and-publish:
