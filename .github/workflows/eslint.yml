@@ -28,17 +28,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Prepare
+        uses: ./.github/actions/prepare
         with:
-          node-version-file: '.nvmrc'
-          cache: 'pnpm'
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+          build: false
 
       - name: Install ESLint SARIF
         run: pnpm install @microsoft/eslint-formatter-sarif
