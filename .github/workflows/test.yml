@@ -1,0 +1,35 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - master # or any branch you want to trigger the publish
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm build
+
+      - name: Start services using Docker Compose
+        run: docker compose -f docker-compose.test.yml up -d
+
+      - name: Run tests
+        run: pnpm test:ci

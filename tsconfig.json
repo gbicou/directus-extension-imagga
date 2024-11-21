@@ -1,8 +1,9 @@
 {
-  "extends": "@directus/tsconfig/node18-esm/tsconfig.json",
+  "extends": "@directus/tsconfig/node18-esm",
   "compilerOptions": {
     "moduleResolution": "Node16",
     "noPropertyAccessFromIndexSignature": false,
+    "resolveJsonModule": true,
     "declaration": false,
     "rootDir": "./src",
     "esModuleInterop": true
