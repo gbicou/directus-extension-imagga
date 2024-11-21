@@ -25,8 +25,8 @@ importers:
         specifier: 23.1.3
         version: 23.1.3(@types/node@20.17.6)(@unhead/vue@1.11.7(vue@3.5.11(typescript@5.6.3)))(encoding@0.1.13)(lodash@4.17.21)(pinia@2.2.4(typescript@5.6.3)(vue@3.5.11(typescript@5.6.3)))(terser@5.36.0)(typescript@5.6.3)(vue@3.5.11(typescript@5.6.3))
       '@directus/env':
-        specifier: 3.1.3
-        version: 3.1.3(vue@3.5.11(typescript@5.6.3))
+        specifier: 4.0.0
+        version: 4.0.0(vue@3.5.11(typescript@5.6.3))
       '@directus/extensions-sdk':
         specifier: 12.1.3
         version: 12.1.3(@types/node@20.17.6)(@unhead/vue@1.11.7(vue@3.5.11(typescript@5.6.3)))(knex@3.1.0(mysql2@3.11.3)(pg@8.13.0)(sqlite3@5.1.7)(tedious@18.6.1))(mysql2@3.11.3)(pg@8.13.0)(pinia@2.2.4(typescript@5.6.3)(vue@3.5.11(typescript@5.6.3)))(pino@9.4.0)(sqlite3@5.1.7)(tedious@18.6.1)(terser@5.36.0)(typescript@5.6.3)
@@ -409,14 +409,8 @@ packages:
     peerDependencies:
       vue: ^3.4
 
-  '@directus/constants@12.0.0':
-    resolution: {integrity: sha512-mzVUldDJJ4WbfFnWHSGtZKrofSAyuKli3KRZ/9spGhyhJuzCory+QKEtYrWyhxFUeV3ZwODxD5RHKHP5l3ya5Q==}
-
   '@directus/constants@12.0.1':
     resolution: {integrity: sha512-KrYZALAduiACQRKkVX1dDor8gOX/uJjpZVrKD8GvvWNOKeEK5/mTU8oHlCeyuLfPamN1gjSGhD6XeXblttL/Xg==}
-
-  '@directus/env@3.1.3':
-    resolution: {integrity: sha512-AHgW1tB8lNkXcTDuV0BslnL7UhnMQn2ccBhkK1pF1y3cfSY2AJ6UVaGOG+Kj+zuK4tk6+NmUv9UEHNB951NzaQ==}
 
   '@directus/env@4.0.0':
     resolution: {integrity: sha512-G8ZHU+oKouyjkpRsbjcbvp7PcvaM0Q13EajcCLkRUdJJBPDcTXyvZQHKqVjLA+ZK84tdmiQjkuIKdv2U6agORA==}
@@ -512,14 +506,6 @@ packages:
 
   '@directus/update-check@12.0.2':
     resolution: {integrity: sha512-BUhc6s/yVfybBcbIiZs+NXemKFHzG77szO0z/wzfARWSuPLSaN1+BhPCuB8u407Id3sWyT5jAzolPXQhcja37Q==}
-
-  '@directus/utils@12.0.3':
-    resolution: {integrity: sha512-c8fcXuTLu1p2PSNbSxmF8rJfffcTtbnwmPFIqdueTmABKdOInTqW5dctv7kLGqOOBbTAmo2BcfT/07aAlDYAYA==}
-    peerDependencies:
-      vue: ^3.4
-    peerDependenciesMeta:
-      vue:
-        optional: true
 
   '@directus/utils@12.0.4':
     resolution: {integrity: sha512-E0ZzgWUOYr8T/UxRe7hBgCiBCU94z5fxedUiPT4rmn5NXoNYg72oYv+UkBkfljeyQMasSo7YLHjTu2aB1yunYQ==}
@@ -6728,18 +6714,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@directus/constants@12.0.0': {}
-
   '@directus/constants@12.0.1': {}
-
-  '@directus/env@3.1.3(vue@3.5.11(typescript@5.6.3))':
-    dependencies:
-      '@directus/constants': 12.0.0
-      '@directus/utils': 12.0.3(vue@3.5.11(typescript@5.6.3))
-      dotenv: 16.4.5
-      lodash-es: 4.17.21
-    transitivePeerDependencies:
-      - vue
 
   '@directus/env@4.0.0(vue@3.5.11(typescript@5.6.3))':
     dependencies:
@@ -6996,19 +6971,6 @@ snapshots:
       semver: 7.6.3
     transitivePeerDependencies:
       - debug
-
-  '@directus/utils@12.0.3(vue@3.5.11(typescript@5.6.3))':
-    dependencies:
-      '@directus/constants': 12.0.0
-      '@directus/system-data': 2.1.1
-      date-fns: 4.1.0
-      fs-extra: 11.2.0
-      joi: 17.13.3
-      js-yaml: 4.1.0
-      lodash-es: 4.17.21
-      micromustache: 8.0.3
-    optionalDependencies:
-      vue: 3.5.11(typescript@5.6.3)
 
   '@directus/utils@12.0.4(vue@3.5.11(typescript@5.6.3))':
     dependencies:
