@@ -1,5 +1,13 @@
 # [1.3.0](https://github.com/gbicou/directus-extension-imagga/compare/v1.2.2...v1.3.0) (2023-11-26)
 
+## 1.6.2
+
+### Patch Changes
+
+- [`dddc25c`](https://github.com/gbicou/directus-extension-imagga/commit/dddc25c1f5baa1e04e11e9508ed7441f80b1eed9) Thanks [@gbicou](https://github.com/gbicou)! - upgrade directus dependencies
+
+- [`ba631d6`](https://github.com/gbicou/directus-extension-imagga/commit/ba631d6c376338ebabd302e81820099d7696daad) Thanks [@gbicou](https://github.com/gbicou)! - use english as default language
+
 ## 1.6.1
 
 ### Patch Changes
