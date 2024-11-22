@@ -112,7 +112,7 @@ export default defineHook(({ action }, { services, logger }) => {
    * If you’d like to get a translation of the tags in other languages, you should use the language parameter.
    * Specify the languages you want to receive your results in, separated by comma.
    */
-  const IMAGGA_TAGS_LANGUAGE = environment['IMAGGA_TAGS_LANGUAGE'] as string
+  const IMAGGA_TAGS_LANGUAGE = environment['IMAGGA_TAGS_LANGUAGE'] as string ?? 'en'
 
   /**
    * Limits the number of tags in the result to the number you set.
