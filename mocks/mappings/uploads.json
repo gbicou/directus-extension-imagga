@@ -1,0 +1,37 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "method": "POST",
+        "url": "/uploads"
+      },
+      "response": {
+        "status": 200,
+        "jsonBody": {
+          "result": {
+            "upload_id": "i05e132196706b94b1d85efb5f3SaM1j"
+          },
+          "status": {
+            "text": "",
+            "type": "success"
+          }
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "DELETE",
+        "url": "/uploads/i05e132196706b94b1d85efb5f3SaM1j"
+      },
+      "response": {
+        "status": 200,
+        "jsonBody": {
+          "status": {
+            "text": "",
+            "type": "success"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -7,12 +7,8 @@ services:
       - ./:/directus/extensions/imagga
     env_file: ".env.test"
   imagga:
-    image: mockserver/mockserver:5.15.0
+    image: wiremock/wiremock:latest
     ports:
-      - 1080:1080
-    environment:
-      MOCKSERVER_PROPERTY_FILE: /mocks/mockserver.properties
-      MOCKSERVER_INITIALIZATION_JSON_PATH: /mocks/imagga.json
-      MOCKSERVER_WATCH_INITIALIZATION_JSON: "true"
+      - 8080:8080
     volumes:
-      - ./mocks:/mocks
+      - ./mocks:/home/wiremock

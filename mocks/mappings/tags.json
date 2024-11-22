@@ -1,0 +1,36 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/tags",
+    "queryParameters": {
+      "image_upload_id": {
+        "equalTo": "i05e132196706b94b1d85efb5f3SaM1j"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "result": {
+        "tags": [
+          {
+            "confidence": 61.4116096496582,
+            "tag": {
+              "en": "mountain"
+            }
+          },
+          {
+            "confidence": 54.3507270812988,
+            "tag": {
+              "en": "landscape"
+            }
+          }
+        ]
+      },
+      "status": {
+        "text": "",
+        "type": "success"
+      }
+    }
+  }
+}

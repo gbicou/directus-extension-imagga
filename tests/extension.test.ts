@@ -1,43 +1,47 @@
 import { describe, it, expect } from 'vitest'
-import { createDirectus, rest, staticToken, readExtensions, uploadFiles, readFile } from "@directus/sdk";
+import { createDirectus, rest, staticToken, readExtensions, uploadFiles, readFile } from '@directus/sdk'
 import { name } from '../package.json'
 import { readFile as readFileFs } from 'node:fs/promises'
-import { mockServerClient } from 'mockserver-client';
+import { WireMock } from 'wiremock-captain'
 
 describe('extension', () => {
-  const client = createDirectus(process.env.PUBLIC_URL as string)
+  // directus client
+  const directus = createDirectus(process.env.PUBLIC_URL as string)
     .with(rest())
     .with(staticToken(process.env.ADMIN_TOKEN as string))
 
-  const mockClient = mockServerClient('localhost', 1080)
+  // imagga mock server
+  const mock = new WireMock('http://127.0.0.1:8080')
 
   it('register correctly in directus', async () => {
-    const extensions = await client.request(readExtensions())
+    const extensions = await directus.request(readExtensions())
 
     expect(extensions).toBeDefined()
     expect(extensions.map(extension => extension.schema?.name)).toContain(name)
   })
 
-  /*
-  it('triggers when image is uploaded', async () => {
+  it('tags image with imagga api', async () => {
+    await mock.clearAllExceptDefault()
+
+    // upload image
     const data = new FormData()
     const paris = await readFileFs(`${import.meta.dirname}/paris.jpeg`)
     data.append('file', new Blob([paris], { type: 'image/jpeg' }))
+    const upload = await directus.request(uploadFiles(data))
 
-    const files = await client.request(uploadFiles(data))
-    expect(files).toBeDefined()
+    expect(upload.id).toBeDefined()
 
-    console.log(files)
+    // need to wait
     await new Promise(resolve => setTimeout(resolve, 1000))
 
-    const mockTags = await mockClient.verify({ path: '/uploads' });
+    const apiUploads = await mock.getRequestsForAPI('POST', '/uploads')
+    expect(apiUploads).toHaveLength(1)
 
-    const file = await client.request(readFile(files.id))
+    // check if image is tagged with api results
+    const file = await directus.request(readFile(upload.id))
     expect(file).toBeDefined()
-
-    console.log(file)
+    expect(file.tags).toEqual(['mountain', 'landscape'])
   }, {
-    timeout: 100_000
+    timeout: 10_000,
   })
-   */
 })

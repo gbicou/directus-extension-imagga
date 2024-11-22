@@ -1,0 +1,9 @@
+{
+  "request": {
+    "url": "/"
+  },
+  "response": {
+    "status": 200,
+    "body": "OK"
+  }
+}
