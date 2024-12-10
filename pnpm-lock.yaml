@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       axios:
-        specifier: 1.7.8
-        version: 1.7.8
+        specifier: 1.7.9
+        version: 1.7.9
       form-data:
         specifier: 4.0.1
         version: 4.0.1
@@ -2486,8 +2486,8 @@ packages:
   axios@1.7.7:
     resolution: {integrity: sha512-S4kL7XrjgBmvdGut0sN3yJxqYzrDOnivkBiN0OFs6hLiUam3UPvswUo0kqGyhqUZGEOytHyumEdXsAkgCOUf3Q==}
 
-  axios@1.7.8:
-    resolution: {integrity: sha512-Uu0wb7KNqK2t5K+YQyVCLM76prD5sRFjKHbJYCP1J7JFGEQ6nN7HWn9+04LAeiJ3ji54lgS/gZCH1oxyrf1SPw==}
+  axios@1.7.9:
+    resolution: {integrity: sha512-LhLcE7Hbiryz8oMDdDptSrWowmB4Bl6RCt6sIJKpRB4XtVf0iEgewX3au/pJqm+Py1kCASkb/FFKjxQaLtxJvw==}
 
   backoff@2.5.0:
     resolution: {integrity: sha512-wC5ihrnUXmR2douXmXLCe5O3zg3GKIyvRi/hi58a/XyRxVI+3/yM0PYueQOZXPXQ9pxBislYkw+sF9b7C/RuMA==}
@@ -9429,7 +9429,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  axios@1.7.8:
+  axios@1.7.9:
     dependencies:
       follow-redirects: 1.15.9
       form-data: 4.0.1
@@ -11275,7 +11275,7 @@ snapshots:
 
   mailgun.js@8.2.2:
     dependencies:
-      axios: 1.7.8
+      axios: 1.7.9
       base-64: 1.0.0
       url-join: 4.0.1
     transitivePeerDependencies:
@@ -13221,7 +13221,7 @@ snapshots:
 
   wait-on@8.0.1:
     dependencies:
-      axios: 1.7.8
+      axios: 1.7.9
       joi: 17.13.3
       lodash: 4.17.21
       minimist: 1.2.8
