@@ -7,7 +7,7 @@ services:
       - ./:/directus/extensions/imagga
     env_file: ".env.test"
   imagga:
-    image: wiremock/wiremock:latest
+    image: wiremock/wiremock:3.10.0
     ports:
       - 8080:8080
     volumes:
