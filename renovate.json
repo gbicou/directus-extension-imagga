@@ -7,5 +7,9 @@
       "groupName": "directus",
       "matchPackageNames": ["@directus/**"]
     }
-  ]
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  }
 }
