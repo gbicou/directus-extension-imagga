@@ -40,8 +40,8 @@
   "devDependencies": {
     "@changesets/changelog-github": "0.5.0",
     "@changesets/cli": "2.27.11",
-    "@directus/api": "23.2.2",
-    "@directus/sdk": "18.0.1",
+    "@directus/api": "23.3.2",
+    "@directus/sdk": "18.0.3",
     "@directus/env": "4.1.0",
     "@directus/extensions-sdk": "12.1.4",
     "@directus/tsconfig": "2.0.0",
@@ -58,7 +58,7 @@
     "wiremock-captain": "3.5.0"
   },
   "peerDependencies": {
-    "@directus/api": "23.2.2",
+    "@directus/api": "23.3.2",
     "@directus/env": "4.1.0",
     "@directus/extensions-sdk": "12.1.4"
   },
