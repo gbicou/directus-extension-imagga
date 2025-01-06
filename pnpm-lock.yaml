@@ -34,8 +34,8 @@ importers:
         specifier: 18.0.3
         version: 18.0.3
       '@directus/tsconfig':
-        specifier: 2.0.0
-        version: 2.0.0
+        specifier: 3.0.0
+        version: 3.0.0
       '@stylistic/eslint-plugin':
         specifier: 2.12.1
         version: 2.12.1(eslint@9.17.0)(typescript@5.6.3)
@@ -509,8 +509,9 @@ packages:
       pinia: '2'
       vue: ^3.4
 
-  '@directus/tsconfig@2.0.0':
-    resolution: {integrity: sha512-DCtDEQ9vamICbTUBeed9CMH8k2ZNJ5ROKctnslWjCeM08LfaCmEyXD9o55c0Yl5FuQJMBr3jL9Fu8VeN4neAAw==}
+  '@directus/tsconfig@3.0.0':
+    resolution: {integrity: sha512-b0BWboH2W++Zx/I/PsMWBeDmMgXZIEOVP2JUh6gWXh3L/TaLuFF/1LG8gv7ise4WDMnW69Vum5kSroNTQyqlUQ==}
+    engines: {pnpm: '9'}
 
   '@directus/types@12.2.2':
     resolution: {integrity: sha512-PR0wQkdTH2PYnnYdvZpJ01nMbEbhIfW9PUvT+vJvnnpVmycE/Y+garvaRDWI9183tXfSL8uvItixhUs1gdqV4w==}
@@ -7399,7 +7400,7 @@ snapshots:
       pinia: 2.3.0(typescript@5.6.3)(vue@3.5.11(typescript@5.6.3))
       vue: 3.5.11(typescript@5.6.3)
 
-  '@directus/tsconfig@2.0.0': {}
+  '@directus/tsconfig@3.0.0': {}
 
   '@directus/types@12.2.2(knex@3.1.0(mysql2@3.11.3)(pg@8.13.0)(sqlite3@5.1.7)(tedious@18.6.1))(mysql2@3.11.3)(pg@8.13.0)(sqlite3@5.1.7)(tedious@18.6.1)(vue@3.5.11(typescript@5.6.3))':
     dependencies:
