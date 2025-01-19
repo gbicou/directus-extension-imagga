@@ -46,7 +46,7 @@
     "@directus/extensions-sdk": "12.1.4",
     "@directus/tsconfig": "3.0.0",
     "@stylistic/eslint-plugin": "2.13.0",
-    "@types/node": "22.10.6",
+    "@types/node": "22.10.7",
     "dotenv": "16.4.7",
     "eslint": "9.18.0",
     "eslint-plugin-unicorn": "56.0.1",
