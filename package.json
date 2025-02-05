@@ -41,10 +41,11 @@
     "@changesets/changelog-github": "0.5.0",
     "@changesets/cli": "2.27.12",
     "@directus/api": "23.3.2",
-    "@directus/sdk": "18.0.3",
     "@directus/env": "4.1.0",
     "@directus/extensions-sdk": "12.1.4",
+    "@directus/sdk": "18.0.3",
     "@directus/tsconfig": "3.0.0",
+    "@eslint/js": "9.19.0",
     "@stylistic/eslint-plugin": "3.0.1",
     "@types/node": "22.13.1",
     "dotenv": "16.4.7",
@@ -65,5 +66,18 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "pnpm@9.15.5+sha512.845196026aab1cc3f098a0474b64dfbab2afe7a1b4e91dd86895d8e4aa32a7a6d03049e2d0ad770bbe4de023a7122fb68c1a1d6e0d033c7076085f9d5d4800d4"
+  "packageManager": "pnpm@10.2.0+sha512.0d27364e0139c6aadeed65ada153135e0ca96c8da42123bd50047f961339dc7a758fc2e944b428f52be570d1bd3372455c1c65fa2e7aa0bfbf931190f9552001",
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "oracledb",
+      "sqlite3"
+    ],
+    "onlyBuiltDependencies": [
+      "argon2",
+      "esbuild",
+      "isolated-vm",
+      "sharp",
+      "vue-demi"
+    ]
+  }
 }
