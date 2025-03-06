@@ -18,14 +18,13 @@ jobs:
       - name: Prepare and Build
         uses: ./.github/actions/prepare
 
+      - name: Build
+        run: pnpm build
+
       - name: Start docker services
         uses: hoverkraft-tech/compose-action@v2
         with:
           compose-file: docker-compose.test.yaml
-          up-flags: '--wait'
-
-#      - name: Wait for services to start
-#        run: pnpm wait-on http://localhost:8055 && pnpm wait-on http://localhost:8080
 
       - name: Run tests
         run: pnpm test
