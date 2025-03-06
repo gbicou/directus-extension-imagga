@@ -1,5 +1,24 @@
 # [1.3.0](https://github.com/gbicou/directus-extension-imagga/compare/v1.2.2...v1.3.0) (2023-11-26)
 
+## [1.6.3](https://github.com/gbicou/directus-extension-imagga/compare/directus-extension-imagga-v1.6.2...directus-extension-imagga-v1.6.3) (2025-03-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency axios to v1.7.8 ([660bf3f](https://github.com/gbicou/directus-extension-imagga/commit/660bf3f8246eeba2b650909469b90e45c3c17cad))
+* **deps:** update dependency axios to v1.7.8 ([b0c6dbe](https://github.com/gbicou/directus-extension-imagga/commit/b0c6dbe649e9a3b7380075460d63bd8a2ea1fb42))
+* **deps:** update dependency axios to v1.7.9 ([3a42a2b](https://github.com/gbicou/directus-extension-imagga/commit/3a42a2bb676a8529b210ede65cea1b18875f7c51))
+* **deps:** update dependency axios to v1.7.9 ([a8c1701](https://github.com/gbicou/directus-extension-imagga/commit/a8c1701fe05f03b9e438f1b947f2119c6d606b22))
+* **deps:** update dependency axios to v1.8.1 ([5f3c6d8](https://github.com/gbicou/directus-extension-imagga/commit/5f3c6d8cd36c6cc4714ae4fcced7e4ce0306318c))
+* **deps:** update dependency axios to v1.8.1 ([b6cba4c](https://github.com/gbicou/directus-extension-imagga/commit/b6cba4c0b9138419a1f76f293a4eb78b16b9d219))
+* **deps:** update dependency axios to v1.8.1 ([83e4dd2](https://github.com/gbicou/directus-extension-imagga/commit/83e4dd22527e08b95c184bb0c3f446d3d761520a))
+* **deps:** update dependency axios to v1.8.1 ([be28951](https://github.com/gbicou/directus-extension-imagga/commit/be28951cdd3a4dfaaa4857555c8fea26012355a8))
+* **deps:** update dependency form-data to v4.0.2 ([6e322e8](https://github.com/gbicou/directus-extension-imagga/commit/6e322e80e23652ef5d8dcc2169f77cc5440173db))
+* **deps:** update dependency form-data to v4.0.2 ([3f79006](https://github.com/gbicou/directus-extension-imagga/commit/3f790064f45db5e20954b3db25984549c2e4a066))
+* **deps:** update dependency form-data to v4.0.2 ([04e096a](https://github.com/gbicou/directus-extension-imagga/commit/04e096a6cdc962d4a23c80ee9b56c8bc2e73876e))
+* **deps:** update dependency form-data to v4.0.2 ([8b20aff](https://github.com/gbicou/directus-extension-imagga/commit/8b20aff25d12a6532dfe0d2c48d50eace33e5ac3))
+* Lockfile update ([69f0818](https://github.com/gbicou/directus-extension-imagga/commit/69f08185e6ab3fa1f922dbb61588644a315fbe13))
+
 ## 1.6.2
 
 ### Patch Changes
