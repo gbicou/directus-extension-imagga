@@ -10,3 +10,6 @@ jobs:
 
       - name: Prepare and Build
         uses: ./.github/actions/prepare
+
+      - name: Build
+        run: pnpm build

@@ -30,8 +30,6 @@ jobs:
 
       - name: Prepare
         uses: ./.github/actions/prepare
-        with:
-          build: false
 
       - name: Install ESLint SARIF
         run: pnpm install @microsoft/eslint-formatter-sarif
