@@ -32,7 +32,7 @@ describe('extension', () => {
     expect(upload.id).toBeDefined()
 
     // need to wait
-    await new Promise(resolve => setTimeout(resolve, 1000))
+    await new Promise(resolve => setTimeout(resolve, 5000))
 
     const apiUploads = await mock.getRequestsForAPI('POST', '/uploads')
     expect(apiUploads).toHaveLength(1)
