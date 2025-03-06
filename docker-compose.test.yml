@@ -6,6 +6,8 @@ services:
     volumes:
       - ./:/directus/extensions/imagga
     env_file: ".env.test"
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider http://127.0.0.1:8055/server/health || exit 1"]
   imagga:
     image: wiremock/wiremock:3.12.1
     ports:
