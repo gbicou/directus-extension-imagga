@@ -25,6 +25,7 @@ jobs:
         uses: hoverkraft-tech/compose-action@v2
         with:
           compose-file: docker-compose.test.yaml
+          up-flags: '--wait'
 
       - name: Run tests
         run: pnpm test
