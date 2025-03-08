@@ -49,7 +49,7 @@
     "eslint": "9.22.0",
     "eslint-plugin-unicorn": "57.0.0",
     "rollup-plugin-node-externals": "8.0.0",
-    "typescript": "5.6.3",
+    "typescript": "5.8.2",
     "typescript-eslint": "8.26.0",
     "vitest": "3.0.8",
     "wiremock-captain": "3.6.1"
