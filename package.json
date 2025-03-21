@@ -44,7 +44,7 @@
     "@directus/tsconfig": "3.0.0",
     "@eslint/js": "9.22.0",
     "@stylistic/eslint-plugin": "4.2.0",
-    "@types/node": "22.13.10",
+    "@types/node": "22.13.11",
     "dotenv": "16.4.7",
     "eslint": "9.22.0",
     "eslint-plugin-unicorn": "57.0.0",
