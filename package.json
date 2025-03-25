@@ -55,7 +55,7 @@
     "wiremock-captain": "4.0.0"
   },
   "peerDependencies": {
-    "@directus/api": "^25.0.1",
+    "@directus/api": "^25.0.1 || ^26.0.0",
     "@directus/env": "^5.0.2",
     "@directus/extensions-sdk": "^13.0.3"
   },
