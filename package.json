@@ -52,7 +52,7 @@
     "typescript": "5.8.2",
     "typescript-eslint": "8.29.0",
     "vitest": "3.1.1",
-    "wiremock-captain": "4.0.0"
+    "wiremock-captain": "4.1.0"
   },
   "peerDependencies": {
     "@directus/api": "^25.0.1 || ^26.0.0",
