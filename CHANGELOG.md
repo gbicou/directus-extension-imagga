@@ -1,5 +1,15 @@
 # [1.3.0](https://github.com/gbicou/directus-extension-imagga/compare/v1.2.2...v1.3.0) (2023-11-26)
 
+## [1.6.5](https://github.com/gbicou/directus-extension-imagga/compare/directus-extension-imagga-v1.6.4...directus-extension-imagga-v1.6.5) (2025-04-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @directus/api to v26 ([#278](https://github.com/gbicou/directus-extension-imagga/issues/278)) ([a9cafe7](https://github.com/gbicou/directus-extension-imagga/commit/a9cafe7331f0d1d1e6c8412acdafe367ca0da5e3))
+* **deps:** update dependency @directus/api to v26.0.1 ([#289](https://github.com/gbicou/directus-extension-imagga/issues/289)) ([614a351](https://github.com/gbicou/directus-extension-imagga/commit/614a351177e09561b02358e25ce3dfbd52d0d3e9))
+* **deps:** update dependency axios to v1.8.4 ([#267](https://github.com/gbicou/directus-extension-imagga/issues/267)) ([0e6d91d](https://github.com/gbicou/directus-extension-imagga/commit/0e6d91d52b5481d6f1905c82a6a67f74f361d48e))
+* **deps:** update directus ([#277](https://github.com/gbicou/directus-extension-imagga/issues/277)) ([d6eb301](https://github.com/gbicou/directus-extension-imagga/commit/d6eb301ed1f42a8a532be3c775ec82655af8d0c6))
+
 ## [1.6.4](https://github.com/gbicou/directus-extension-imagga/compare/directus-extension-imagga-v1.6.3...directus-extension-imagga-v1.6.4) (2025-03-15)
 
 
