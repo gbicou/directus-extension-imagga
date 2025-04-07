@@ -33,11 +33,11 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@directus/api": "^26.0.0",
-    "@directus/env": "^5.0.2",
-    "@directus/extensions-sdk": "^13.0.3",
-    "axios": "^1.7.9",
-    "form-data": "^4.0.1"
+    "@directus/api": "^26.0.1",
+    "@directus/env": "^5.0.3",
+    "@directus/extensions-sdk": "^13.0.4",
+    "axios": "^1.8.4",
+    "form-data": "^4.0.2"
   },
   "devDependencies": {
     "@directus/sdk": "19.1.0",
