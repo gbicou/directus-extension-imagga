@@ -33,7 +33,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@directus/api": "^26.0.1",
+    "@directus/api": "^27.0.0",
     "@directus/env": "^5.0.3",
     "@directus/extensions-sdk": "^13.0.4",
     "axios": "^1.8.4",
@@ -55,7 +55,7 @@
     "wiremock-captain": "4.1.0"
   },
   "peerDependencies": {
-    "@directus/api": "^25.0.1 || ^26.0.0",
+    "@directus/api": "^25.0.1 || ^26.0.0 || ^27.0.0",
     "@directus/env": "^5.0.2",
     "@directus/extensions-sdk": "^13.0.3"
   },
