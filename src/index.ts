@@ -1,6 +1,6 @@
-import { useEnv } from '@directus/env'
 import { defineHook } from '@directus/extensions-sdk'
-import { AssetsService, FilesService } from '@directus/api/services/index'
+import { AssetsService } from '@directus/api/services/assets'
+import { FilesService } from '@directus/api/services/files'
 import axios from 'axios'
 import FormData from 'form-data'
 
@@ -85,50 +85,48 @@ function mapColorData(input: ColorData[]) {
   }))
 }
 
-export default defineHook(({ action }, { services, logger }) => {
-  const environment = useEnv()
-
+export default defineHook(({ action }, { services, logger, env }) => {
   /**
    * Imagga API endpoint
    */
-  const IMAGGA_API = (environment['IMAGGA_API'] as string) ?? 'https://api.imagga.com/v2'
+  const IMAGGA_API = (env['IMAGGA_API'] as string) ?? 'https://api.imagga.com/v2'
 
   /**
    * Imagga API key
    */
-  const IMAGGA_KEY = (environment['IMAGGA_KEY'] as string) ?? ''
+  const IMAGGA_KEY = (env['IMAGGA_KEY'] as string) ?? ''
 
   /**
    * Imagga API secret
    */
-  const IMAGGA_SECRET = (environment['IMAGGA_SECRET'] as string) ?? ''
+  const IMAGGA_SECRET = (env['IMAGGA_SECRET'] as string) ?? ''
 
   /**
    * Retrieve tags
    */
-  const IMAGGA_TAGS_ENABLE = environment['IMAGGA_TAGS_ENABLE'] as boolean
+  const IMAGGA_TAGS_ENABLE = env['IMAGGA_TAGS_ENABLE'] as boolean
 
   /**
    * If you’d like to get a translation of the tags in other languages, you should use the language parameter.
    * Specify the languages you want to receive your results in, separated by comma.
    */
-  const IMAGGA_TAGS_LANGUAGE = environment['IMAGGA_TAGS_LANGUAGE'] as string ?? 'en'
+  const IMAGGA_TAGS_LANGUAGE = env['IMAGGA_TAGS_LANGUAGE'] as string ?? 'en'
 
   /**
    * Limits the number of tags in the result to the number you set.
    */
-  const IMAGGA_TAGS_LIMIT = (environment['IMAGGA_TAGS_LIMIT'] as string) ?? '-1'
+  const IMAGGA_TAGS_LIMIT = (env['IMAGGA_TAGS_LIMIT'] as string) ?? '-1'
 
   /**
    * Thresholds the confidence of tags in the result to the number you set.
    * By default, all tags with confidence above 7 are being returned, and you cannot go lower than that.
    */
-  const IMAGGA_TAGS_THRESHOLD = (environment['IMAGGA_TAGS_THRESHOLD'] as string) ?? '0.0'
+  const IMAGGA_TAGS_THRESHOLD = (env['IMAGGA_TAGS_THRESHOLD'] as string) ?? '0.0'
 
   /**
    * Extract colors
    */
-  const IMAGGA_COLORS_ENABLE = environment['IMAGGA_COLORS_ENABLE'] as boolean
+  const IMAGGA_COLORS_ENABLE = env['IMAGGA_COLORS_ENABLE'] as boolean
 
   const auth = { username: IMAGGA_KEY, password: IMAGGA_SECRET }
 
