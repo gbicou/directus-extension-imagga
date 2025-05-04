@@ -1,5 +1,13 @@
 # [1.3.0](https://github.com/gbicou/directus-extension-imagga/compare/v1.2.2...v1.3.0) (2023-11-26)
 
+## [1.6.6](https://github.com/gbicou/directus-extension-imagga/compare/directus-extension-imagga-v1.6.5...directus-extension-imagga-v1.6.6) (2025-05-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @directus/api to v27 ([#322](https://github.com/gbicou/directus-extension-imagga/issues/322)) ([a5aa8db](https://github.com/gbicou/directus-extension-imagga/commit/a5aa8dbf40be2849f190758cde5037fabd6d9ffa))
+* Remplace useEnv with env from hook ([ef3555b](https://github.com/gbicou/directus-extension-imagga/commit/ef3555b5dfe1debc9be90697b2723d48149dfaf6))
+
 ## [1.6.5](https://github.com/gbicou/directus-extension-imagga/compare/directus-extension-imagga-v1.6.4...directus-extension-imagga-v1.6.5) (2025-04-04)
 
 
