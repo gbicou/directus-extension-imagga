@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { createDirectus, rest, staticToken, readExtensions, uploadFiles, readFile } from '@directus/sdk'
-import { name } from '../package.json'
+import package_ from '../package.json'
 import { readFile as readFileFs } from 'node:fs/promises'
 import { WireMock } from 'wiremock-captain'
 
@@ -17,10 +17,10 @@ describe('extension', () => {
     const extensions = await directus.request(readExtensions())
 
     expect(extensions).toBeDefined()
-    expect(extensions.map(extension => extension.schema?.name)).toContain(name)
+    expect(extensions.map(extension => extension.schema?.name)).toContain(package_.name)
   })
 
-  it('tags image with imagga api', async () => {
+  it('tags image with imagga api', { timeout: 10_000 }, async () => {
     await mock.clearAllExceptDefault()
 
     // upload image
@@ -31,17 +31,21 @@ describe('extension', () => {
 
     expect(upload.id).toBeDefined()
 
-    // need to wait
-    await new Promise(resolve => setTimeout(resolve, 1000))
+    let apiUploads: unknown[] = []
+    let retry = 0
+    while (retry < 5 && !(apiUploads?.length === 1)) {
+      apiUploads = await mock.getRequestsForAPI('POST', '/uploads')
+      if (!(apiUploads?.length === 1)) {
+        await new Promise(resolve => setTimeout(resolve, 1000))
+      }
+      retry++
+    }
 
-    const apiUploads = await mock.getRequestsForAPI('POST', '/uploads')
     expect(apiUploads).toHaveLength(1)
 
-    // check if image is tagged with api results
+    // check if the image is tagged with api results
     const file = await directus.request(readFile(upload.id))
     expect(file).toBeDefined()
     expect(file.tags).toEqual(['mountain', 'landscape'])
-  }, {
-    timeout: 10_000,
   })
 })
