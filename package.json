@@ -51,7 +51,7 @@
     "typescript": "5.8.3",
     "typescript-eslint": "8.32.1",
     "vitest": "3.1.4",
-    "wiremock-captain": "4.1.0"
+    "wiremock-captain": "4.1.1"
   },
   "peerDependencies": {
     "@directus/api": "^25.0.1 || ^26.0.0 || ^27.0.0",
