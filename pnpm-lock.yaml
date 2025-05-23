@@ -61,8 +61,8 @@ importers:
         specifier: 3.1.4
         version: 3.1.4(@types/node@22.15.21)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.1)
       wiremock-captain:
-        specifier: 4.1.0
-        version: 4.1.0
+        specifier: 4.1.1
+        version: 4.1.1
 
 packages:
 
@@ -5950,8 +5950,8 @@ packages:
     resolution: {integrity: sha512-c9bZp7b5YtRj2wOe6dlj32MK+Bx/M/d+9VB2SHM1OtsUHR0aV0tdP6DWh/iMt0kWi1t5g1Iudu6hQRNd1A4PVA==}
     engines: {node: '>=18'}
 
-  wiremock-captain@4.1.0:
-    resolution: {integrity: sha512-jd6nA0OmN0wUWMGRF8IeA4aVrMUj4DmwZHKW7SEdfCnvVPfYs9KQeDso4zkJGizroTCBHqkjUUFY2uTKarGjhQ==}
+  wiremock-captain@4.1.1:
+    resolution: {integrity: sha512-2eGHjhmtGV/g/vCwxsnkhhEErmGR2n6n6CW9w/ZduFwPRXE5aogPw7QuUwZxzMiIYBm4pi2Gv5Kpx8+tZSE36g==}
     engines: {node: '>=22.14.0', npm: '>=10.9.2'}
 
   word-wrap@1.2.5:
@@ -13039,7 +13039,7 @@ snapshots:
     dependencies:
       string-width: 7.2.0
 
-  wiremock-captain@4.1.0: {}
+  wiremock-captain@4.1.1: {}
 
   word-wrap@1.2.5: {}
 
