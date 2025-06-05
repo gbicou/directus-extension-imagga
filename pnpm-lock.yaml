@@ -22,7 +22,7 @@ importers:
         version: 1.9.0
       form-data:
         specifier: ^4.0.2
-        version: 4.0.2
+        version: 4.0.3
     devDependencies:
       '@directus/sdk':
         specifier: 19.1.0
@@ -3427,8 +3427,8 @@ packages:
     resolution: {integrity: sha512-XHIrMD0NpDrNM/Ckf7XJiBbLl57KEhT3+i3yY+eWm+cqYZJQTZrKo8Y8AWKnuV5GT4scfuUGt9LzNoIx3dU1nQ==}
     engines: {node: '>= 0.12'}
 
-  form-data@4.0.2:
-    resolution: {integrity: sha512-hGfm/slu0ZabnNt4oaRZ6uREyfCj6P4fT/n6A1rGV+Z0VdGXjfOhVUpkn6qVQONHGIFwmveGXyDs75+nr6FM8w==}
+  form-data@4.0.3:
+    resolution: {integrity: sha512-qsITQPfmvMOSAdeyZ+12I1c+CKSstAFAwu+97zrnWAbIr5u8wfsExUzCesVLC8NgHuRUqNN4Zy6UPWUTRGslcA==}
     engines: {node: '>= 6'}
 
   forwarded@0.2.0:
@@ -9045,7 +9045,7 @@ snapshots:
   axios@1.8.4:
     dependencies:
       follow-redirects: 1.15.9(debug@4.3.7)
-      form-data: 4.0.2
+      form-data: 4.0.3
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
@@ -9053,7 +9053,7 @@ snapshots:
   axios@1.9.0:
     dependencies:
       follow-redirects: 1.15.9(debug@4.3.7)
-      form-data: 4.0.2
+      form-data: 4.0.3
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
@@ -10208,11 +10208,12 @@ snapshots:
       mime-types: 2.1.35
       safe-buffer: 5.2.1
 
-  form-data@4.0.2:
+  form-data@4.0.3:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.8
       es-set-tostringtag: 2.1.0
+      hasown: 2.0.2
       mime-types: 2.1.35
 
   forwarded@0.2.0: {}
@@ -11193,7 +11194,7 @@ snapshots:
   nodemailer-mailgun-transport@2.1.5(lodash@4.17.21):
     dependencies:
       consolidate: 0.15.1(lodash@4.17.21)
-      form-data: 4.0.2
+      form-data: 4.0.3
       mailgun.js: 8.2.2
     transitivePeerDependencies:
       - arc-templates
