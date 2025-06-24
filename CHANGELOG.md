@@ -1,5 +1,13 @@
 # [1.3.0](https://github.com/gbicou/directus-extension-imagga/compare/v1.2.2...v1.3.0) (2023-11-26)
 
+## [1.6.7](https://github.com/gbicou/directus-extension-imagga/compare/directus-extension-imagga-v1.6.6...directus-extension-imagga-v1.6.7) (2025-06-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency form-data to v4.0.3 ([#357](https://github.com/gbicou/directus-extension-imagga/issues/357)) ([3a09a31](https://github.com/gbicou/directus-extension-imagga/commit/3a09a319d8458d1a1c7c645e3f382f2de74de200))
+* **deps:** update directus ([#348](https://github.com/gbicou/directus-extension-imagga/issues/348)) ([09a0744](https://github.com/gbicou/directus-extension-imagga/commit/09a0744ff3abd98e301605c7c58e32ce9883128d))
+
 ## [1.6.6](https://github.com/gbicou/directus-extension-imagga/compare/directus-extension-imagga-v1.6.5...directus-extension-imagga-v1.6.6) (2025-05-04)
 
 
