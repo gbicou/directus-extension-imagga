@@ -33,13 +33,13 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@directus/api": "^27.0.2",
-    "@directus/extensions-sdk": "^13.1.0",
+    "@directus/api": "^28.0.0",
+    "@directus/extensions-sdk": "^14.0.0",
     "axios": "^1.9.0",
     "form-data": "^4.0.2"
   },
   "devDependencies": {
-    "@directus/sdk": "19.1.0",
+    "@directus/sdk": "20.0.0",
     "@directus/tsconfig": "3.0.0",
     "@eslint/js": "9.29.0",
     "@stylistic/eslint-plugin": "5.1.0",
@@ -54,9 +54,9 @@
     "wiremock-captain": "4.1.2"
   },
   "peerDependencies": {
-    "@directus/api": "^25.0.1 || ^26.0.0 || ^27.0.0",
+    "@directus/api": "^25.0.1 || ^26.0.0 || ^27.0.0 || ^28.0.0",
     "@directus/env": "^5.0.2",
-    "@directus/extensions-sdk": "^13.0.3"
+    "@directus/extensions-sdk": "^13.0.3 || ^14.0.0"
   },
   "publishConfig": {
     "access": "public"
