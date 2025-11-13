@@ -33,7 +33,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@directus/api": "^27.0.2",
+    "@directus/api": "^32.0.0",
     "@directus/extensions-sdk": "^13.1.0",
     "axios": "^1.9.0",
     "form-data": "^4.0.2"
