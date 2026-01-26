@@ -42,7 +42,7 @@
     "@directus/sdk": "21.0.0",
     "@directus/tsconfig": "3.0.0",
     "@eslint/js": "9.37.0",
-    "@stylistic/eslint-plugin": "5.1.0",
+    "@stylistic/eslint-plugin": "5.7.1",
     "@types/node": "22.19.7",
     "dotenv": "17.2.3",
     "eslint": "9.37.0",
