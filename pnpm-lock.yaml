@@ -49,8 +49,8 @@ importers:
         specifier: 59.0.1
         version: 59.0.1(eslint@9.37.0)
       rollup-plugin-node-externals:
-        specifier: 8.0.1
-        version: 8.0.1(rollup@4.52.5)
+        specifier: 8.1.2
+        version: 8.1.2(rollup@4.52.5)
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -6496,8 +6496,8 @@ packages:
       esbuild: '>=0.18.0'
       rollup: ^1.20.0 || ^2.0.0 || ^3.0.0 || ^4.0.0
 
-  rollup-plugin-node-externals@8.0.1:
-    resolution: {integrity: sha512-j6uve/BPEyHCmQuXpu5/LT5qXw69QLIi6YnFrs6F7tmGFXjkFDT0zqZMt0KaMuWSvkcxJFBklsKfYYoKKEPwyw==}
+  rollup-plugin-node-externals@8.1.2:
+    resolution: {integrity: sha512-EuB6/lolkMLK16gvibUjikERq5fCRVIGwD2xue/CrM8D0pz5GXD2V6N8IrgxegwbcUoKkUFI8VYCEEv8MMvgpA==}
     engines: {node: '>= 21 || ^20.6.0 || ^18.19.0'}
     peerDependencies:
       rollup: ^4.0.0
@@ -15327,7 +15327,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  rollup-plugin-node-externals@8.0.1(rollup@4.52.5):
+  rollup-plugin-node-externals@8.1.2(rollup@4.52.5):
     dependencies:
       rollup: 4.52.5
 
