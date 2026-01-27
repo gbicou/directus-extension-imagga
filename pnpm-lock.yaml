@@ -19,7 +19,7 @@ importers:
         version: 17.0.5(@types/node@22.19.7)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1)(terser@5.43.1)(tsx@4.20.6)(typescript@5.9.3)(ws@8.18.3)(yaml@2.8.0)
       axios:
         specifier: ^1.9.0
-        version: 1.13.3
+        version: 1.13.4
       form-data:
         specifier: ^4.0.2
         version: 4.0.5
@@ -2626,8 +2626,8 @@ packages:
   axios@1.12.2:
     resolution: {integrity: sha512-vMJzPewAlRyOgxV2dU0Cuz2O8zzzx9VYtbJOaBgXFeLc4IV/Eg50n4LowmehOOR61S8ZMpc2K5Sa7g6A4jfkUw==}
 
-  axios@1.13.3:
-    resolution: {integrity: sha512-ERT8kdX7DZjtUm7IitEyV7InTHAF42iJuMArIiDIV5YtPanJkgw4hw5Dyg9fh0mihdWNn1GKaeIWErfe56UQ1g==}
+  axios@1.13.4:
+    resolution: {integrity: sha512-1wVkUaAO6WyaYtCkcYCOx12ZgpGf9Zif+qXa4n+oYzK558YryKqiL6UWwd5DqiH3VRW0GYhTZQ/vlgJrCoNQlg==}
 
   b4a@1.7.3:
     resolution: {integrity: sha512-5Q2mfq2WfGuFp3uS//0s6baOJLMoVduPYVeNmDYxu5OUA1/cBfvr2RIS7vi62LdNj/urk1hfmj867I3qt6uZ7Q==}
@@ -10112,7 +10112,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  axios@1.13.3:
+  axios@1.13.4:
     dependencies:
       follow-redirects: 1.15.11(debug@4.3.7)
       form-data: 4.0.5
@@ -12054,7 +12054,7 @@ snapshots:
 
   mailgun.js@8.2.2:
     dependencies:
-      axios: 1.13.3
+      axios: 1.13.4
       base-64: 1.0.0
       url-join: 4.0.1
     transitivePeerDependencies:
