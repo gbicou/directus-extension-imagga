@@ -8,6 +8,9 @@
       "matchPackageNames": ["@directus/**"]
     }
   ],
+  "postUpdateOptions": [
+    "pnpmDedupe"
+  ],
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true
