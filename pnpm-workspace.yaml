@@ -1,0 +1,17 @@
+ignoredBuiltDependencies:
+  - oracledb
+  - sqlite3
+onlyBuiltDependencies:
+  - argon2
+  - esbuild
+  - isolated-vm
+  - sharp
+  - vue-demi
+supportedArchitectures:
+  os:
+    - linux
+  cpu:
+    - x64
+  libc:
+    - musl
+    - glibc
