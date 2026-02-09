@@ -25,8 +25,8 @@ importers:
         version: 4.0.5
     devDependencies:
       '@directus/sdk':
-        specifier: 21.0.0
-        version: 21.0.0
+        specifier: 21.1.0
+        version: 21.1.0
       '@directus/tsconfig':
         specifier: 3.0.0
         version: 3.0.0
@@ -573,8 +573,8 @@ packages:
   '@directus/schema@13.0.5':
     resolution: {integrity: sha512-SoxMPLvXSHnaOlUQlpBoHWmevTGXc9sgLLXRfLC7v8HwRHtWiNYfgWR5gVt7S+yVXYvnBVbu0IL5sDU+lyxlbg==}
 
-  '@directus/sdk@21.0.0':
-    resolution: {integrity: sha512-+Uld9+anm5N1NfVgEmPBReOrT0uTkE3OnQginvqx7yGS94e20qzNsW8IJnstC1OvdUMTDteDrdYMfx6QG+kY7Q==}
+  '@directus/sdk@21.1.0':
+    resolution: {integrity: sha512-Ig8zZAQDbc7QMIM54N+x71C04lni9MN9yalNAezjDjFdNknTJzupDY7V5cb+kOJL8GsqDE9Bg8xq8xCmkDVs5A==}
     engines: {node: '>=22'}
 
   '@directus/specs@12.0.0':
@@ -8005,7 +8005,7 @@ snapshots:
       - supports-color
       - tedious
 
-  '@directus/sdk@21.0.0': {}
+  '@directus/sdk@21.1.0': {}
 
   '@directus/specs@12.0.0':
     dependencies:

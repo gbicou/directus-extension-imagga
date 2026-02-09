@@ -39,7 +39,7 @@
     "form-data": "^4.0.2"
   },
   "devDependencies": {
-    "@directus/sdk": "21.0.0",
+    "@directus/sdk": "21.1.0",
     "@directus/tsconfig": "3.0.0",
     "@eslint/js": "9.39.2",
     "@stylistic/eslint-plugin": "5.7.1",
