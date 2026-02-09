@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
 
       - name: Prepare and Build
         uses: ./.github/actions/prepare
@@ -21,7 +21,7 @@ jobs:
         run: pnpm build
 
       - name: Start docker services
-        uses: hoverkraft-tech/compose-action@v2
+        uses: hoverkraft-tech/compose-action@4894d2492015c1774ee5a13a95b1072093087ec3 # v2
         with:
           compose-file: docker-compose.test.yaml
           up-flags: '--wait'
