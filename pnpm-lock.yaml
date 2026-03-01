@@ -10,13 +10,13 @@ importers:
     dependencies:
       '@directus/api':
         specifier: ^33.0.0
-        version: 33.1.1(@azure/core-client@1.10.1)(@types/node@22.19.11)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(encoding@0.1.13)(lodash@4.17.23)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(terser@5.46.0)(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))(yaml@2.8.2)
+        version: 33.1.1(@azure/core-client@1.10.1)(@types/node@24.10.14)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(encoding@0.1.13)(lodash@4.17.23)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(terser@5.46.0)(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))(yaml@2.8.2)
       '@directus/env':
         specifier: ^5.0.2
         version: 5.5.1(vue@3.5.24(typescript@5.9.3))
       '@directus/extensions-sdk':
         specifier: ^17.0.0
-        version: 17.0.7(@types/node@22.19.11)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(terser@5.46.0)(tsx@4.20.6)(typescript@5.9.3)(ws@8.18.3)(yaml@2.8.2)
+        version: 17.0.7(@types/node@24.10.14)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(deep-diff@1.0.2)(express@5.2.1)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(pino@9.7.0)(sharp@0.34.5)(terser@5.46.0)(tsx@4.20.6)(typescript@5.9.3)(ws@8.18.3)(yaml@2.8.2)
       axios:
         specifier: ^1.9.0
         version: 1.13.5
@@ -37,8 +37,8 @@ importers:
         specifier: 5.9.0
         version: 5.9.0(eslint@9.39.2)
       '@types/node':
-        specifier: 22.19.11
-        version: 22.19.11
+        specifier: 24.10.14
+        version: 24.10.14
       dotenv:
         specifier: 17.3.1
         version: 17.3.1
@@ -59,7 +59,7 @@ importers:
         version: 8.56.0(eslint@9.39.2)(typescript@5.9.3)
       vitest:
         specifier: 4.0.18
-        version: 4.0.18(@opentelemetry/api@1.9.0)(@types/node@22.19.11)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2)
+        version: 4.0.18(@opentelemetry/api@1.9.0)(@types/node@24.10.14)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2)
       wiremock-captain:
         specifier: 4.1.3
         version: 4.1.3
@@ -2493,8 +2493,8 @@ packages:
   '@types/luxon@3.7.1':
     resolution: {integrity: sha512-H3iskjFIAn5SlJU7OuxUmTEpebK6TKB8rxZShDslBMZJ5u9S//KM1sbdAisiSrqwLQncVjnpi2OK2J51h+4lsg==}
 
-  '@types/node@22.19.11':
-    resolution: {integrity: sha512-BH7YwL6rA93ReqeQS1c4bsPpcfOmJasG+Fkr6Y59q83f9M1WcBRHR2vM+P9eOisYRcN3ujQoiZY8uk5W+1WL8w==}
+  '@types/node@24.10.14':
+    resolution: {integrity: sha512-OowOUbD1lBCOFIPOZ8xnMIhgqA4sCutMiYOmPHL1PTLt5+y1XA+g2+yC9OOyz8p+deMZqPZLxfMjYIfrKsPeFg==}
 
   '@types/nodemailer@7.0.3':
     resolution: {integrity: sha512-fC8w49YQ868IuPWRXqPfLf+MuTRex5Z1qxMoG8rr70riqqbOp2F5xgOKE9fODEBPzpnvjkJXFgK6IL2xgMSTnA==}
@@ -2904,6 +2904,7 @@ packages:
   basic-ftp@5.1.0:
     resolution: {integrity: sha512-RkaJzeJKDbaDWTIPiJwubyljaEPwpVWkm9Rt5h9Nd6h7tEXTJ3VB4qxdZBioV7JO5yLUaOKwz7vDOzlncUsegw==}
     engines: {node: '>=10.0.0'}
+    deprecated: Security vulnerability fixed in 5.2.0, please upgrade
 
   bignumber.js@9.3.1:
     resolution: {integrity: sha512-Ko0uX15oIUS7wJ3Rb30Fs6SkVbLmPBAKdlm7q9+ak9bbIeFf0MwuBsQV6z7+X768/cHsfg+WlysDWJcmthjsjQ==}
@@ -6338,8 +6339,8 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  undici-types@6.21.0:
-    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+  undici-types@7.16.0:
+    resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==}
 
   undici@7.16.0:
     resolution: {integrity: sha512-QEg3HPMll0o3t2ourKwOeUAZ159Kn9mx5pnzHRQO8+Wixmh88YdZRiIwat0iNzNNXn0yoEtXJqFpyW7eM8BV7g==}
@@ -7877,7 +7878,7 @@ snapshots:
 
   '@directus/ai@1.1.0': {}
 
-  '@directus/api@33.1.1(@azure/core-client@1.10.1)(@types/node@22.19.11)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(encoding@0.1.13)(lodash@4.17.23)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(terser@5.46.0)(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))(yaml@2.8.2)':
+  '@directus/api@33.1.1(@azure/core-client@1.10.1)(@types/node@24.10.14)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(encoding@0.1.13)(lodash@4.17.23)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(terser@5.46.0)(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))(yaml@2.8.2)':
     dependencies:
       '@ai-sdk/anthropic': 3.0.9(zod@4.1.12)
       '@ai-sdk/google': 3.0.6(zod@4.1.12)
@@ -7892,7 +7893,7 @@ snapshots:
       '@directus/errors': 2.2.0
       '@directus/extensions': 3.0.17(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)
       '@directus/extensions-registry': 3.0.17(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)
-      '@directus/extensions-sdk': 17.0.7(@types/node@22.19.11)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(terser@5.46.0)(tsx@4.20.6)(typescript@5.9.3)(ws@8.18.3)(yaml@2.8.2)
+      '@directus/extensions-sdk': 17.0.7(@types/node@24.10.14)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(terser@5.46.0)(tsx@4.20.6)(typescript@5.9.3)(ws@8.18.3)(yaml@2.8.2)
       '@directus/format-title': 12.1.1
       '@directus/memory': 3.1.0(vue@3.5.24(typescript@5.9.3))
       '@directus/pressure': 3.0.15(vue@3.5.24(typescript@5.9.3))
@@ -7936,7 +7937,7 @@ snapshots:
       date-fns: 4.1.0
       deep-diff: 1.0.2
       destroy: 1.2.0
-      directus: 11.15.1(@azure/core-client@1.10.1)(@types/node@22.19.11)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(encoding@0.1.13)(lodash@4.17.23)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(terser@5.46.0)(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))(yaml@2.8.2)
+      directus: 11.15.1(@azure/core-client@1.10.1)(@types/node@24.10.14)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(encoding@0.1.13)(lodash@4.17.23)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(terser@5.46.0)(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))(yaml@2.8.2)
       dotenv: 17.2.3
       encodeurl: 2.0.0
       eventemitter2: 6.4.9
@@ -7951,7 +7952,7 @@ snapshots:
       graphql-ws: 6.0.6(graphql@16.12.0)(ws@8.18.3)
       helmet: 8.1.0
       icc: 3.0.0
-      inquirer: 12.11.0(@types/node@22.19.11)
+      inquirer: 12.11.0(@types/node@24.10.14)
       ioredis: 5.8.2
       ip-matching: 2.1.2
       isolated-vm: 5.0.3
@@ -8159,7 +8160,7 @@ snapshots:
       - vue-router
       - ws
 
-  '@directus/extensions-sdk@17.0.7(@types/node@22.19.11)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(terser@5.46.0)(tsx@4.20.6)(typescript@5.9.3)(ws@8.18.3)(yaml@2.8.2)':
+  '@directus/extensions-sdk@17.0.7(@types/node@24.10.14)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(terser@5.46.0)(tsx@4.20.6)(typescript@5.9.3)(ws@8.18.3)(yaml@2.8.2)':
     dependencies:
       '@directus/composables': 11.2.11(vue@3.5.24(typescript@5.9.3))
       '@directus/constants': 14.0.0
@@ -8173,19 +8174,83 @@ snapshots:
       '@rollup/plugin-replace': 6.0.3(rollup@4.52.5)
       '@rollup/plugin-terser': 0.4.4(rollup@4.52.5)
       '@rollup/plugin-virtual': 3.0.2(rollup@4.52.5)
-      '@vitejs/plugin-vue': 6.0.1(vite@7.1.12(@types/node@22.19.11)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2))(vue@3.5.24(typescript@5.9.3))
+      '@vitejs/plugin-vue': 6.0.1(vite@7.1.12(@types/node@24.10.14)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2))(vue@3.5.24(typescript@5.9.3))
       chalk: 5.6.2
       commander: 14.0.2
       esbuild: 0.26.0
       execa: 9.6.0
       fs-extra: 11.3.2
-      inquirer: 12.11.0(@types/node@22.19.11)
+      inquirer: 12.11.0(@types/node@24.10.14)
       ora: 8.2.0
       rollup: 4.52.5
       rollup-plugin-esbuild: 6.2.1(esbuild@0.26.0)(rollup@4.52.5)
       rollup-plugin-styler: 2.0.0(rollup@4.52.5)(typescript@5.9.3)
       semver: 7.7.3
-      vite: 7.1.12(@types/node@22.19.11)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2)
+      vite: 7.1.12(@types/node@24.10.14)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2)
+      vue: 3.5.24(typescript@5.9.3)
+    transitivePeerDependencies:
+      - '@types/node'
+      - '@unhead/vue'
+      - aws-crt
+      - better-sqlite3
+      - debug
+      - deep-diff
+      - express
+      - graphql
+      - jiti
+      - knex
+      - less
+      - lightningcss
+      - mysql
+      - mysql2
+      - nodemailer
+      - openapi3-ts
+      - pg
+      - pg-native
+      - pinia
+      - pino
+      - sass
+      - sass-embedded
+      - sharp
+      - sqlite3
+      - stylus
+      - sugarss
+      - supports-color
+      - tedious
+      - terser
+      - tsx
+      - typescript
+      - vue-router
+      - ws
+      - yaml
+
+  '@directus/extensions-sdk@17.0.7(@types/node@24.10.14)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(deep-diff@1.0.2)(express@5.2.1)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(pino@9.7.0)(sharp@0.34.5)(terser@5.46.0)(tsx@4.20.6)(typescript@5.9.3)(ws@8.18.3)(yaml@2.8.2)':
+    dependencies:
+      '@directus/composables': 11.2.11(vue@3.5.24(typescript@5.9.3))
+      '@directus/constants': 14.0.0
+      '@directus/extensions': 3.0.17(deep-diff@1.0.2)(express@5.2.1)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)
+      '@directus/themes': 1.2.2(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))
+      '@directus/types': 14.1.0(deep-diff@1.0.2)(express@5.2.1)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)
+      '@directus/utils': 13.2.0(vue@3.5.24(typescript@5.9.3))
+      '@rollup/plugin-commonjs': 28.0.9(rollup@4.52.5)
+      '@rollup/plugin-json': 6.1.0(rollup@4.52.5)
+      '@rollup/plugin-node-resolve': 16.0.3(rollup@4.52.5)
+      '@rollup/plugin-replace': 6.0.3(rollup@4.52.5)
+      '@rollup/plugin-terser': 0.4.4(rollup@4.52.5)
+      '@rollup/plugin-virtual': 3.0.2(rollup@4.52.5)
+      '@vitejs/plugin-vue': 6.0.1(vite@7.1.12(@types/node@24.10.14)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2))(vue@3.5.24(typescript@5.9.3))
+      chalk: 5.6.2
+      commander: 14.0.2
+      esbuild: 0.26.0
+      execa: 9.6.0
+      fs-extra: 11.3.2
+      inquirer: 12.11.0(@types/node@24.10.14)
+      ora: 8.2.0
+      rollup: 4.52.5
+      rollup-plugin-esbuild: 6.2.1(esbuild@0.26.0)(rollup@4.52.5)
+      rollup-plugin-styler: 2.0.0(rollup@4.52.5)(typescript@5.9.3)
+      semver: 7.7.3
+      vite: 7.1.12(@types/node@24.10.14)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2)
       vue: 3.5.24(typescript@5.9.3)
     transitivePeerDependencies:
       - '@types/node'
@@ -8227,6 +8292,37 @@ snapshots:
     dependencies:
       '@directus/constants': 14.0.0
       '@directus/types': 14.1.0(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)
+      '@directus/utils': 13.2.0(vue@3.5.24(typescript@5.9.3))
+      '@types/express': 4.17.21
+      fs-extra: 11.3.2
+      lodash-es: 4.17.21
+      zod: 4.1.12
+    optionalDependencies:
+      knex: 3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))
+      pino: 9.7.0
+      vue: 3.5.24(typescript@5.9.3)
+    transitivePeerDependencies:
+      - aws-crt
+      - better-sqlite3
+      - deep-diff
+      - express
+      - graphql
+      - mysql
+      - mysql2
+      - nodemailer
+      - openapi3-ts
+      - pg
+      - pg-native
+      - sharp
+      - sqlite3
+      - supports-color
+      - tedious
+      - ws
+
+  '@directus/extensions@3.0.17(deep-diff@1.0.2)(express@5.2.1)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)':
+    dependencies:
+      '@directus/constants': 14.0.0
+      '@directus/types': 14.1.0(deep-diff@1.0.2)(express@5.2.1)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)
       '@directus/utils': 13.2.0(vue@3.5.24(typescript@5.9.3))
       '@types/express': 4.17.21
       fs-extra: 11.3.2
@@ -8408,6 +8504,40 @@ snapshots:
     optionalDependencies:
       deep-diff: 1.0.2
       express: 4.21.2
+      graphql: 16.12.0
+      knex: 3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))
+      nodemailer: 7.0.11
+      openapi3-ts: 4.5.0
+      pino: 9.7.0
+      sharp: 0.34.5
+      vue: 3.5.24(typescript@5.9.3)
+      ws: 8.18.3
+    transitivePeerDependencies:
+      - aws-crt
+      - better-sqlite3
+      - mysql
+      - mysql2
+      - pg
+      - pg-native
+      - sqlite3
+      - supports-color
+      - tedious
+
+  '@directus/types@14.1.0(deep-diff@1.0.2)(express@5.2.1)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)':
+    dependencies:
+      '@directus/ai': 1.1.0
+      '@directus/constants': 14.0.0
+      '@directus/schema': 13.0.5(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))
+      '@sinclair/typebox': 0.34.41
+      '@types/archiver': 7.0.0
+      '@types/express': 4.17.21
+      '@types/geojson': 7946.0.16
+      '@types/nodemailer': 7.0.3
+      '@types/ws': 8.18.1
+      zod: 4.1.12
+    optionalDependencies:
+      deep-diff: 1.0.2
+      express: 5.2.1
       graphql: 16.12.0
       knex: 3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))
       nodemailer: 7.0.11
@@ -8925,128 +9055,128 @@ snapshots:
 
   '@inquirer/ansi@1.0.2': {}
 
-  '@inquirer/checkbox@4.3.2(@types/node@22.19.11)':
+  '@inquirer/checkbox@4.3.2(@types/node@24.10.14)':
     dependencies:
       '@inquirer/ansi': 1.0.2
-      '@inquirer/core': 10.3.2(@types/node@22.19.11)
+      '@inquirer/core': 10.3.2(@types/node@24.10.14)
       '@inquirer/figures': 1.0.15
-      '@inquirer/type': 3.0.10(@types/node@22.19.11)
+      '@inquirer/type': 3.0.10(@types/node@24.10.14)
       yoctocolors-cjs: 2.1.3
     optionalDependencies:
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
 
-  '@inquirer/confirm@5.1.21(@types/node@22.19.11)':
+  '@inquirer/confirm@5.1.21(@types/node@24.10.14)':
     dependencies:
-      '@inquirer/core': 10.3.2(@types/node@22.19.11)
-      '@inquirer/type': 3.0.10(@types/node@22.19.11)
+      '@inquirer/core': 10.3.2(@types/node@24.10.14)
+      '@inquirer/type': 3.0.10(@types/node@24.10.14)
     optionalDependencies:
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
 
-  '@inquirer/core@10.3.2(@types/node@22.19.11)':
+  '@inquirer/core@10.3.2(@types/node@24.10.14)':
     dependencies:
       '@inquirer/ansi': 1.0.2
       '@inquirer/figures': 1.0.15
-      '@inquirer/type': 3.0.10(@types/node@22.19.11)
+      '@inquirer/type': 3.0.10(@types/node@24.10.14)
       cli-width: 4.1.0
       mute-stream: 2.0.0
       signal-exit: 4.1.0
       wrap-ansi: 6.2.0
       yoctocolors-cjs: 2.1.3
     optionalDependencies:
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
 
-  '@inquirer/editor@4.2.23(@types/node@22.19.11)':
+  '@inquirer/editor@4.2.23(@types/node@24.10.14)':
     dependencies:
-      '@inquirer/core': 10.3.2(@types/node@22.19.11)
-      '@inquirer/external-editor': 1.0.3(@types/node@22.19.11)
-      '@inquirer/type': 3.0.10(@types/node@22.19.11)
+      '@inquirer/core': 10.3.2(@types/node@24.10.14)
+      '@inquirer/external-editor': 1.0.3(@types/node@24.10.14)
+      '@inquirer/type': 3.0.10(@types/node@24.10.14)
     optionalDependencies:
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
 
-  '@inquirer/expand@4.0.23(@types/node@22.19.11)':
+  '@inquirer/expand@4.0.23(@types/node@24.10.14)':
     dependencies:
-      '@inquirer/core': 10.3.2(@types/node@22.19.11)
-      '@inquirer/type': 3.0.10(@types/node@22.19.11)
+      '@inquirer/core': 10.3.2(@types/node@24.10.14)
+      '@inquirer/type': 3.0.10(@types/node@24.10.14)
       yoctocolors-cjs: 2.1.3
     optionalDependencies:
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
 
-  '@inquirer/external-editor@1.0.3(@types/node@22.19.11)':
+  '@inquirer/external-editor@1.0.3(@types/node@24.10.14)':
     dependencies:
       chardet: 2.1.1
       iconv-lite: 0.7.2
     optionalDependencies:
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
 
   '@inquirer/figures@1.0.15': {}
 
-  '@inquirer/input@4.3.1(@types/node@22.19.11)':
+  '@inquirer/input@4.3.1(@types/node@24.10.14)':
     dependencies:
-      '@inquirer/core': 10.3.2(@types/node@22.19.11)
-      '@inquirer/type': 3.0.10(@types/node@22.19.11)
+      '@inquirer/core': 10.3.2(@types/node@24.10.14)
+      '@inquirer/type': 3.0.10(@types/node@24.10.14)
     optionalDependencies:
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
 
-  '@inquirer/number@3.0.23(@types/node@22.19.11)':
+  '@inquirer/number@3.0.23(@types/node@24.10.14)':
     dependencies:
-      '@inquirer/core': 10.3.2(@types/node@22.19.11)
-      '@inquirer/type': 3.0.10(@types/node@22.19.11)
+      '@inquirer/core': 10.3.2(@types/node@24.10.14)
+      '@inquirer/type': 3.0.10(@types/node@24.10.14)
     optionalDependencies:
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
 
-  '@inquirer/password@4.0.23(@types/node@22.19.11)':
-    dependencies:
-      '@inquirer/ansi': 1.0.2
-      '@inquirer/core': 10.3.2(@types/node@22.19.11)
-      '@inquirer/type': 3.0.10(@types/node@22.19.11)
-    optionalDependencies:
-      '@types/node': 22.19.11
-
-  '@inquirer/prompts@7.10.1(@types/node@22.19.11)':
-    dependencies:
-      '@inquirer/checkbox': 4.3.2(@types/node@22.19.11)
-      '@inquirer/confirm': 5.1.21(@types/node@22.19.11)
-      '@inquirer/editor': 4.2.23(@types/node@22.19.11)
-      '@inquirer/expand': 4.0.23(@types/node@22.19.11)
-      '@inquirer/input': 4.3.1(@types/node@22.19.11)
-      '@inquirer/number': 3.0.23(@types/node@22.19.11)
-      '@inquirer/password': 4.0.23(@types/node@22.19.11)
-      '@inquirer/rawlist': 4.1.11(@types/node@22.19.11)
-      '@inquirer/search': 3.2.2(@types/node@22.19.11)
-      '@inquirer/select': 4.4.2(@types/node@22.19.11)
-    optionalDependencies:
-      '@types/node': 22.19.11
-
-  '@inquirer/rawlist@4.1.11(@types/node@22.19.11)':
-    dependencies:
-      '@inquirer/core': 10.3.2(@types/node@22.19.11)
-      '@inquirer/type': 3.0.10(@types/node@22.19.11)
-      yoctocolors-cjs: 2.1.3
-    optionalDependencies:
-      '@types/node': 22.19.11
-
-  '@inquirer/search@3.2.2(@types/node@22.19.11)':
-    dependencies:
-      '@inquirer/core': 10.3.2(@types/node@22.19.11)
-      '@inquirer/figures': 1.0.15
-      '@inquirer/type': 3.0.10(@types/node@22.19.11)
-      yoctocolors-cjs: 2.1.3
-    optionalDependencies:
-      '@types/node': 22.19.11
-
-  '@inquirer/select@4.4.2(@types/node@22.19.11)':
+  '@inquirer/password@4.0.23(@types/node@24.10.14)':
     dependencies:
       '@inquirer/ansi': 1.0.2
-      '@inquirer/core': 10.3.2(@types/node@22.19.11)
-      '@inquirer/figures': 1.0.15
-      '@inquirer/type': 3.0.10(@types/node@22.19.11)
+      '@inquirer/core': 10.3.2(@types/node@24.10.14)
+      '@inquirer/type': 3.0.10(@types/node@24.10.14)
+    optionalDependencies:
+      '@types/node': 24.10.14
+
+  '@inquirer/prompts@7.10.1(@types/node@24.10.14)':
+    dependencies:
+      '@inquirer/checkbox': 4.3.2(@types/node@24.10.14)
+      '@inquirer/confirm': 5.1.21(@types/node@24.10.14)
+      '@inquirer/editor': 4.2.23(@types/node@24.10.14)
+      '@inquirer/expand': 4.0.23(@types/node@24.10.14)
+      '@inquirer/input': 4.3.1(@types/node@24.10.14)
+      '@inquirer/number': 3.0.23(@types/node@24.10.14)
+      '@inquirer/password': 4.0.23(@types/node@24.10.14)
+      '@inquirer/rawlist': 4.1.11(@types/node@24.10.14)
+      '@inquirer/search': 3.2.2(@types/node@24.10.14)
+      '@inquirer/select': 4.4.2(@types/node@24.10.14)
+    optionalDependencies:
+      '@types/node': 24.10.14
+
+  '@inquirer/rawlist@4.1.11(@types/node@24.10.14)':
+    dependencies:
+      '@inquirer/core': 10.3.2(@types/node@24.10.14)
+      '@inquirer/type': 3.0.10(@types/node@24.10.14)
       yoctocolors-cjs: 2.1.3
     optionalDependencies:
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
 
-  '@inquirer/type@3.0.10(@types/node@22.19.11)':
+  '@inquirer/search@3.2.2(@types/node@24.10.14)':
+    dependencies:
+      '@inquirer/core': 10.3.2(@types/node@24.10.14)
+      '@inquirer/figures': 1.0.15
+      '@inquirer/type': 3.0.10(@types/node@24.10.14)
+      yoctocolors-cjs: 2.1.3
     optionalDependencies:
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
+
+  '@inquirer/select@4.4.2(@types/node@24.10.14)':
+    dependencies:
+      '@inquirer/ansi': 1.0.2
+      '@inquirer/core': 10.3.2(@types/node@24.10.14)
+      '@inquirer/figures': 1.0.15
+      '@inquirer/type': 3.0.10(@types/node@24.10.14)
+      yoctocolors-cjs: 2.1.3
+    optionalDependencies:
+      '@types/node': 24.10.14
+
+  '@inquirer/type@3.0.10(@types/node@24.10.14)':
+    optionalDependencies:
+      '@types/node': 24.10.14
 
   '@ioredis/commands@1.4.0': {}
 
@@ -9946,7 +10076,7 @@ snapshots:
   '@types/body-parser@1.19.6':
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
 
   '@types/caseless@0.12.5': {}
 
@@ -9957,7 +10087,7 @@ snapshots:
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
 
   '@types/deep-eql@4.0.2': {}
 
@@ -9965,7 +10095,7 @@ snapshots:
 
   '@types/express-serve-static-core@4.19.8':
     dependencies:
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
       '@types/qs': 6.14.0
       '@types/range-parser': 1.2.7
       '@types/send': 1.2.1
@@ -9985,14 +10115,14 @@ snapshots:
 
   '@types/luxon@3.7.1': {}
 
-  '@types/node@22.19.11':
+  '@types/node@24.10.14':
     dependencies:
-      undici-types: 6.21.0
+      undici-types: 7.16.0
 
   '@types/nodemailer@7.0.3':
     dependencies:
       '@aws-sdk/client-sesv2': 3.986.0
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
     transitivePeerDependencies:
       - aws-crt
 
@@ -10002,17 +10132,17 @@ snapshots:
 
   '@types/readable-stream@4.0.23':
     dependencies:
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
     optional: true
 
   '@types/readdir-glob@1.1.5':
     dependencies:
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
 
   '@types/request@2.48.13':
     dependencies:
       '@types/caseless': 0.12.5
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
       '@types/tough-cookie': 4.0.5
       form-data: 2.5.5
 
@@ -10020,18 +10150,18 @@ snapshots:
 
   '@types/send@1.2.1':
     dependencies:
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
 
   '@types/serve-static@2.2.0':
     dependencies:
       '@types/http-errors': 2.0.5
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
 
   '@types/tough-cookie@4.0.5': {}
 
   '@types/ws@8.18.1':
     dependencies:
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
 
   '@typescript-eslint/eslint-plugin@8.56.0(@typescript-eslint/parser@8.56.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2)(typescript@5.9.3)':
     dependencies:
@@ -10157,10 +10287,10 @@ snapshots:
 
   '@vercel/oidc@3.1.0': {}
 
-  '@vitejs/plugin-vue@6.0.1(vite@7.1.12(@types/node@22.19.11)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2))(vue@3.5.24(typescript@5.9.3))':
+  '@vitejs/plugin-vue@6.0.1(vite@7.1.12(@types/node@24.10.14)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2))(vue@3.5.24(typescript@5.9.3))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.29
-      vite: 7.1.12(@types/node@22.19.11)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2)
+      vite: 7.1.12(@types/node@24.10.14)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2)
       vue: 3.5.24(typescript@5.9.3)
 
   '@vitest/expect@4.0.18':
@@ -10172,13 +10302,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.0.3
 
-  '@vitest/mocker@4.0.18(vite@7.3.1(@types/node@22.19.11)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2))':
+  '@vitest/mocker@4.0.18(vite@7.3.1(@types/node@24.10.14)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2))':
     dependencies:
       '@vitest/spy': 4.0.18
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 7.3.1(@types/node@22.19.11)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2)
+      vite: 7.3.1(@types/node@24.10.14)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2)
 
   '@vitest/pretty-format@4.0.18':
     dependencies:
@@ -11041,9 +11171,9 @@ snapshots:
 
   detect-libc@2.1.2: {}
 
-  directus@11.15.1(@azure/core-client@1.10.1)(@types/node@22.19.11)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(encoding@0.1.13)(lodash@4.17.23)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(terser@5.46.0)(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))(yaml@2.8.2):
+  directus@11.15.1(@azure/core-client@1.10.1)(@types/node@24.10.14)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(encoding@0.1.13)(lodash@4.17.23)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(terser@5.46.0)(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))(yaml@2.8.2):
     dependencies:
-      '@directus/api': 33.1.1(@azure/core-client@1.10.1)(@types/node@22.19.11)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(encoding@0.1.13)(lodash@4.17.23)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(terser@5.46.0)(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))(yaml@2.8.2)
+      '@directus/api': 33.1.1(@azure/core-client@1.10.1)(@types/node@24.10.14)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(encoding@0.1.13)(lodash@4.17.23)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(terser@5.46.0)(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))(yaml@2.8.2)
       '@directus/update-check': 13.0.4
     transitivePeerDependencies:
       - '@azure/core-client'
@@ -12028,17 +12158,17 @@ snapshots:
 
   ini@1.3.8: {}
 
-  inquirer@12.11.0(@types/node@22.19.11):
+  inquirer@12.11.0(@types/node@24.10.14):
     dependencies:
       '@inquirer/ansi': 1.0.2
-      '@inquirer/core': 10.3.2(@types/node@22.19.11)
-      '@inquirer/prompts': 7.10.1(@types/node@22.19.11)
-      '@inquirer/type': 3.0.10(@types/node@22.19.11)
+      '@inquirer/core': 10.3.2(@types/node@24.10.14)
+      '@inquirer/prompts': 7.10.1(@types/node@24.10.14)
+      '@inquirer/type': 3.0.10(@types/node@24.10.14)
       mute-stream: 3.0.0
       run-async: 4.0.6
       rxjs: 7.8.2
     optionalDependencies:
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
 
   interpret@2.2.0: {}
 
@@ -14213,7 +14343,7 @@ snapshots:
       '@azure/identity': 4.13.0
       '@azure/keyvault-keys': 4.10.0(@azure/core-client@1.10.1)
       '@js-joda/core': 5.7.0
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
       bl: 6.1.6
       iconv-lite: 0.6.3
       js-md4: 0.3.2
@@ -14355,7 +14485,7 @@ snapshots:
 
   typescript@5.9.3: {}
 
-  undici-types@6.21.0: {}
+  undici-types@7.16.0: {}
 
   undici@7.16.0: {}
 
@@ -14419,7 +14549,7 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite@7.1.12(@types/node@22.19.11)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2):
+  vite@7.1.12(@types/node@24.10.14)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.3)
@@ -14428,13 +14558,13 @@ snapshots:
       rollup: 4.57.1
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
       fsevents: 2.3.3
       terser: 5.46.0
       tsx: 4.20.6
       yaml: 2.8.2
 
-  vite@7.3.1(@types/node@22.19.11)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2):
+  vite@7.3.1(@types/node@24.10.14)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2):
     dependencies:
       esbuild: 0.27.3
       fdir: 6.5.0(picomatch@4.0.3)
@@ -14443,16 +14573,16 @@ snapshots:
       rollup: 4.57.1
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
       fsevents: 2.3.3
       terser: 5.46.0
       tsx: 4.20.6
       yaml: 2.8.2
 
-  vitest@4.0.18(@opentelemetry/api@1.9.0)(@types/node@22.19.11)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2):
+  vitest@4.0.18(@opentelemetry/api@1.9.0)(@types/node@24.10.14)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2):
     dependencies:
       '@vitest/expect': 4.0.18
-      '@vitest/mocker': 4.0.18(vite@7.3.1(@types/node@22.19.11)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2))
+      '@vitest/mocker': 4.0.18(vite@7.3.1(@types/node@24.10.14)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2))
       '@vitest/pretty-format': 4.0.18
       '@vitest/runner': 4.0.18
       '@vitest/snapshot': 4.0.18
@@ -14469,11 +14599,11 @@ snapshots:
       tinyexec: 1.0.2
       tinyglobby: 0.2.15
       tinyrainbow: 3.0.3
-      vite: 7.3.1(@types/node@22.19.11)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2)
+      vite: 7.3.1(@types/node@24.10.14)(terser@5.46.0)(tsx@4.20.6)(yaml@2.8.2)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@opentelemetry/api': 1.9.0
-      '@types/node': 22.19.11
+      '@types/node': 24.10.14
     transitivePeerDependencies:
       - jiti
       - less
