@@ -1,6 +1,6 @@
 services:
   directus:
-    image: directus/directus:11.15.4@sha256:d745a30ccb7e933a33ee1c25124286c0dcac63876170d67320bfb92b454d758b
+    image: directus/directus:11.16.0@sha256:663b6c29d52dea1e6906d73d7f9b259717d348149392fce6fea5ba8ecf7c1db2
     ports:
       - 8055:8055
     volumes:
