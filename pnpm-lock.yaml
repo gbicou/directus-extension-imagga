@@ -10,13 +10,13 @@ importers:
     dependencies:
       '@directus/api':
         specifier: ^35.0.0
-        version: 35.0.1(@azure/core-client@1.10.1)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@opentelemetry/exporter-trace-otlp-http@0.202.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.1.0(@opentelemetry/api@1.9.0))(@types/node@22.19.17)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(braintrust@3.7.1(@aws-sdk/credential-provider-web-identity@3.972.23)(zod@4.1.12))(encoding@0.1.13)(jiti@2.6.1)(lodash@4.17.23)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(terser@5.46.1)(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))(yaml@2.8.3)
+        version: 35.0.1(@azure/core-client@1.10.1)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@opentelemetry/exporter-trace-otlp-http@0.202.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.1.0(@opentelemetry/api@1.9.0))(@types/node@22.19.17)(@unhead/vue@1.11.20(vue@3.5.24(typescript@6.0.3)))(braintrust@3.7.1(@aws-sdk/credential-provider-web-identity@3.972.23)(zod@4.1.12))(encoding@0.1.13)(jiti@2.6.1)(lodash@4.17.23)(pinia@2.3.1(typescript@6.0.3)(vue@3.5.24(typescript@6.0.3)))(terser@5.46.1)(typescript@6.0.3)(vue@3.5.24(typescript@6.0.3))(yaml@2.8.3)
       '@directus/env':
         specifier: ^5.0.2
-        version: 5.7.1(vue@3.5.24(typescript@5.9.3))
+        version: 5.7.1(vue@3.5.24(typescript@6.0.3))
       '@directus/extensions-sdk':
         specifier: ^17.0.0
-        version: 17.1.1(@types/node@22.19.17)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(deep-diff@1.0.2)(express@5.2.1)(graphql@16.12.0)(jiti@2.6.1)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(pino@9.7.0)(sharp@0.34.5)(terser@5.46.1)(tsx@4.20.6)(typescript@5.9.3)(ws@8.18.3)(yaml@2.8.3)
+        version: 17.1.1(@types/node@22.19.17)(@unhead/vue@1.11.20(vue@3.5.24(typescript@6.0.3)))(deep-diff@1.0.2)(express@5.2.1)(graphql@16.12.0)(jiti@2.6.1)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pinia@2.3.1(typescript@6.0.3)(vue@3.5.24(typescript@6.0.3)))(pino@9.7.0)(sharp@0.34.5)(terser@5.46.1)(tsx@4.20.6)(typescript@6.0.3)(ws@8.18.3)(yaml@2.8.3)
       axios:
         specifier: ^1.9.0
         version: 1.14.0
@@ -52,11 +52,11 @@ importers:
         specifier: 8.1.2
         version: 8.1.2(rollup@4.59.0)
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 6.0.3
+        version: 6.0.3
       typescript-eslint:
         specifier: 8.58.2
-        version: 8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@5.9.3)
+        version: 8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.3)
       vitest:
         specifier: 4.1.4
         version: 4.1.4(@opentelemetry/api@1.9.0)(@types/node@22.19.17)(vite@8.0.0(@types/node@22.19.17)(esbuild@0.26.0)(jiti@2.6.1)(terser@5.46.1)(tsx@4.20.6)(yaml@2.8.3))
@@ -7023,8 +7023,8 @@ packages:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
       typescript: '>=4.8.4 <6.1.0'
 
-  typescript@5.9.3:
-    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
+  typescript@6.0.3:
+    resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -8550,7 +8550,7 @@ snapshots:
 
   '@directus/ai@1.3.1': {}
 
-  '@directus/api@35.0.1(@azure/core-client@1.10.1)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@opentelemetry/exporter-trace-otlp-http@0.202.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.1.0(@opentelemetry/api@1.9.0))(@types/node@22.19.17)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(braintrust@3.7.1(@aws-sdk/credential-provider-web-identity@3.972.23)(zod@4.1.12))(encoding@0.1.13)(jiti@2.6.1)(lodash@4.17.23)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(terser@5.46.1)(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))(yaml@2.8.3)':
+  '@directus/api@35.0.1(@azure/core-client@1.10.1)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@opentelemetry/exporter-trace-otlp-http@0.202.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.1.0(@opentelemetry/api@1.9.0))(@types/node@22.19.17)(@unhead/vue@1.11.20(vue@3.5.24(typescript@6.0.3)))(braintrust@3.7.1(@aws-sdk/credential-provider-web-identity@3.972.23)(zod@4.1.12))(encoding@0.1.13)(jiti@2.6.1)(lodash@4.17.23)(pinia@2.3.1(typescript@6.0.3)(vue@3.5.24(typescript@6.0.3)))(terser@5.46.1)(typescript@6.0.3)(vue@3.5.24(typescript@6.0.3))(yaml@2.8.3)':
     dependencies:
       '@ai-sdk/anthropic': 3.0.58(zod@4.1.12)
       '@ai-sdk/devtools': 0.0.13
@@ -8563,27 +8563,27 @@ snapshots:
       '@directus/ai': 1.3.1
       '@directus/app': 15.7.0
       '@directus/constants': 14.3.0
-      '@directus/env': 5.7.1(vue@3.5.24(typescript@5.9.3))
+      '@directus/env': 5.7.1(vue@3.5.24(typescript@6.0.3))
       '@directus/errors': 2.3.0
-      '@directus/extensions': 3.0.23(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)
-      '@directus/extensions-registry': 3.0.23(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)
-      '@directus/extensions-sdk': 17.1.1(@types/node@22.19.17)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(jiti@2.6.1)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(terser@5.46.1)(tsx@4.20.6)(typescript@5.9.3)(ws@8.18.3)(yaml@2.8.3)
+      '@directus/extensions': 3.0.23(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@6.0.3))(ws@8.18.3)
+      '@directus/extensions-registry': 3.0.23(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@6.0.3))(ws@8.18.3)
+      '@directus/extensions-sdk': 17.1.1(@types/node@22.19.17)(@unhead/vue@1.11.20(vue@3.5.24(typescript@6.0.3)))(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(jiti@2.6.1)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pinia@2.3.1(typescript@6.0.3)(vue@3.5.24(typescript@6.0.3)))(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(terser@5.46.1)(tsx@4.20.6)(typescript@6.0.3)(ws@8.18.3)(yaml@2.8.3)
       '@directus/format-title': 12.1.2
-      '@directus/memory': 3.1.6(vue@3.5.24(typescript@5.9.3))
-      '@directus/pressure': 3.0.21(vue@3.5.24(typescript@5.9.3))
+      '@directus/memory': 3.1.6(vue@3.5.24(typescript@6.0.3))
+      '@directus/pressure': 3.0.21(vue@3.5.24(typescript@6.0.3))
       '@directus/schema': 13.0.7(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))
-      '@directus/schema-builder': 0.0.18(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)
+      '@directus/schema-builder': 0.0.18(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@6.0.3))(ws@8.18.3)
       '@directus/specs': 13.0.0
       '@directus/storage': 12.0.4
-      '@directus/storage-driver-azure': 12.0.21(vue@3.5.24(typescript@5.9.3))
-      '@directus/storage-driver-cloudinary': 12.0.21(vue@3.5.24(typescript@5.9.3))
-      '@directus/storage-driver-gcs': 12.0.21(encoding@0.1.13)(vue@3.5.24(typescript@5.9.3))
+      '@directus/storage-driver-azure': 12.0.21(vue@3.5.24(typescript@6.0.3))
+      '@directus/storage-driver-cloudinary': 12.0.21(vue@3.5.24(typescript@6.0.3))
+      '@directus/storage-driver-gcs': 12.0.21(encoding@0.1.13)(vue@3.5.24(typescript@6.0.3))
       '@directus/storage-driver-local': 12.0.4
-      '@directus/storage-driver-s3': 12.1.7(vue@3.5.24(typescript@5.9.3))
-      '@directus/storage-driver-supabase': 3.0.21(vue@3.5.24(typescript@5.9.3))
+      '@directus/storage-driver-s3': 12.1.7(vue@3.5.24(typescript@6.0.3))
+      '@directus/storage-driver-supabase': 3.0.21(vue@3.5.24(typescript@6.0.3))
       '@directus/system-data': 4.4.0
-      '@directus/utils': 13.4.0(vue@3.5.24(typescript@5.9.3))
-      '@directus/validation': 2.0.21(vue@3.5.24(typescript@5.9.3))
+      '@directus/utils': 13.4.0(vue@3.5.24(typescript@6.0.3))
+      '@directus/validation': 2.0.21(vue@3.5.24(typescript@6.0.3))
       '@godaddy/terminus': 4.12.1
       '@langfuse/otel': 4.0.0(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@opentelemetry/exporter-trace-otlp-http@0.202.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.1.0(@opentelemetry/api@1.9.0))
       '@modelcontextprotocol/sdk': 1.26.0(zod@4.1.12)
@@ -8613,7 +8613,7 @@ snapshots:
       cron: 4.3.4
       date-fns: 4.1.0
       deep-diff: 1.0.2
-      directus: 11.17.1(@azure/core-client@1.10.1)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@opentelemetry/exporter-trace-otlp-http@0.202.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.1.0(@opentelemetry/api@1.9.0))(@types/node@22.19.17)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(braintrust@3.7.1(@aws-sdk/credential-provider-web-identity@3.972.23)(zod@4.1.12))(encoding@0.1.13)(jiti@2.6.1)(lodash@4.17.23)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(terser@5.46.1)(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))(yaml@2.8.3)
+      directus: 11.17.1(@azure/core-client@1.10.1)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@opentelemetry/exporter-trace-otlp-http@0.202.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.1.0(@opentelemetry/api@1.9.0))(@types/node@22.19.17)(@unhead/vue@1.11.20(vue@3.5.24(typescript@6.0.3)))(braintrust@3.7.1(@aws-sdk/credential-provider-web-identity@3.972.23)(zod@4.1.12))(encoding@0.1.13)(jiti@2.6.1)(lodash@4.17.23)(pinia@2.3.1(typescript@6.0.3)(vue@3.5.24(typescript@6.0.3)))(terser@5.46.1)(typescript@6.0.3)(vue@3.5.24(typescript@6.0.3))(yaml@2.8.3)
       dotenv: 17.2.3
       encodeurl: 2.0.0
       eventemitter2: 6.4.9
@@ -8677,7 +8677,7 @@ snapshots:
       snappy: 7.3.3
       stream-json: 1.9.1
       tar: 7.5.8
-      tsdown: 0.15.11(typescript@5.9.3)
+      tsdown: 0.15.11(typescript@6.0.3)
       tsx: 4.20.6
       uuid: 11.1.0
       wellknown: 0.5.0
@@ -8796,23 +8796,23 @@ snapshots:
 
   '@directus/app@15.7.0': {}
 
-  '@directus/composables@11.2.17(vue@3.5.24(typescript@5.9.3))':
+  '@directus/composables@11.2.17(vue@3.5.24(typescript@6.0.3))':
     dependencies:
       '@directus/constants': 14.3.0
-      '@directus/utils': 13.4.0(vue@3.5.24(typescript@5.9.3))
+      '@directus/utils': 13.4.0(vue@3.5.24(typescript@6.0.3))
       axios: 1.13.5
       lodash-es: 4.17.23
       nanoid: 5.1.6
-      vue: 3.5.24(typescript@5.9.3)
+      vue: 3.5.24(typescript@6.0.3)
     transitivePeerDependencies:
       - debug
 
   '@directus/constants@14.3.0': {}
 
-  '@directus/env@5.7.1(vue@3.5.24(typescript@5.9.3))':
+  '@directus/env@5.7.1(vue@3.5.24(typescript@6.0.3))':
     dependencies:
       '@directus/constants': 14.3.0
-      '@directus/utils': 13.4.0(vue@3.5.24(typescript@5.9.3))
+      '@directus/utils': 13.4.0(vue@3.5.24(typescript@6.0.3))
       dotenv: 17.2.3
       lodash-es: 4.17.23
     transitivePeerDependencies:
@@ -8823,11 +8823,11 @@ snapshots:
       '@directus/storage': 12.0.4
       ms: 2.1.3
 
-  '@directus/extensions-registry@3.0.23(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)':
+  '@directus/extensions-registry@3.0.23(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@6.0.3))(ws@8.18.3)':
     dependencies:
       '@directus/constants': 14.3.0
       '@directus/errors': 2.3.0
-      '@directus/extensions': 3.0.23(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)
+      '@directus/extensions': 3.0.23(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@6.0.3))(ws@8.18.3)
       ky: 1.14.0
       zod: 4.1.12
     transitivePeerDependencies:
@@ -8852,21 +8852,21 @@ snapshots:
       - vue-router
       - ws
 
-  '@directus/extensions-sdk@17.1.1(@types/node@22.19.17)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(jiti@2.6.1)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(terser@5.46.1)(tsx@4.20.6)(typescript@5.9.3)(ws@8.18.3)(yaml@2.8.3)':
+  '@directus/extensions-sdk@17.1.1(@types/node@22.19.17)(@unhead/vue@1.11.20(vue@3.5.24(typescript@6.0.3)))(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(jiti@2.6.1)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pinia@2.3.1(typescript@6.0.3)(vue@3.5.24(typescript@6.0.3)))(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(terser@5.46.1)(tsx@4.20.6)(typescript@6.0.3)(ws@8.18.3)(yaml@2.8.3)':
     dependencies:
-      '@directus/composables': 11.2.17(vue@3.5.24(typescript@5.9.3))
+      '@directus/composables': 11.2.17(vue@3.5.24(typescript@6.0.3))
       '@directus/constants': 14.3.0
-      '@directus/extensions': 3.0.23(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)
-      '@directus/themes': 1.3.1(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))
-      '@directus/types': 15.0.1(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)
-      '@directus/utils': 13.4.0(vue@3.5.24(typescript@5.9.3))
+      '@directus/extensions': 3.0.23(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@6.0.3))(ws@8.18.3)
+      '@directus/themes': 1.3.1(@unhead/vue@1.11.20(vue@3.5.24(typescript@6.0.3)))(pinia@2.3.1(typescript@6.0.3)(vue@3.5.24(typescript@6.0.3)))(vue@3.5.24(typescript@6.0.3))
+      '@directus/types': 15.0.1(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@6.0.3))(ws@8.18.3)
+      '@directus/utils': 13.4.0(vue@3.5.24(typescript@6.0.3))
       '@rollup/plugin-commonjs': 28.0.9(rollup@4.59.0)
       '@rollup/plugin-json': 6.1.0(rollup@4.59.0)
       '@rollup/plugin-node-resolve': 16.0.3(rollup@4.59.0)
       '@rollup/plugin-replace': 6.0.3(rollup@4.59.0)
       '@rollup/plugin-terser': 1.0.0(rollup@4.59.0)
       '@rollup/plugin-virtual': 3.0.2(rollup@4.59.0)
-      '@vitejs/plugin-vue': 6.0.1(vite@8.0.0(@types/node@22.19.17)(esbuild@0.26.0)(jiti@2.6.1)(terser@5.46.1)(tsx@4.20.6)(yaml@2.8.3))(vue@3.5.24(typescript@5.9.3))
+      '@vitejs/plugin-vue': 6.0.1(vite@8.0.0(@types/node@22.19.17)(esbuild@0.26.0)(jiti@2.6.1)(terser@5.46.1)(tsx@4.20.6)(yaml@2.8.3))(vue@3.5.24(typescript@6.0.3))
       chalk: 5.6.2
       commander: 14.0.2
       esbuild: 0.26.0
@@ -8876,10 +8876,10 @@ snapshots:
       ora: 8.2.0
       rollup: 4.59.0
       rollup-plugin-esbuild: 6.2.1(esbuild@0.26.0)(rollup@4.59.0)
-      rollup-plugin-styler: 2.0.0(rollup@4.59.0)(typescript@5.9.3)
+      rollup-plugin-styler: 2.0.0(rollup@4.59.0)(typescript@6.0.3)
       semver: 7.7.3
       vite: 8.0.0(@types/node@22.19.17)(esbuild@0.26.0)(jiti@2.6.1)(terser@5.46.1)(tsx@4.20.6)(yaml@2.8.3)
-      vue: 3.5.24(typescript@5.9.3)
+      vue: 3.5.24(typescript@6.0.3)
     transitivePeerDependencies:
       - '@types/node'
       - '@unhead/vue'
@@ -8916,21 +8916,21 @@ snapshots:
       - ws
       - yaml
 
-  '@directus/extensions-sdk@17.1.1(@types/node@22.19.17)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(deep-diff@1.0.2)(express@5.2.1)(graphql@16.12.0)(jiti@2.6.1)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(pino@9.7.0)(sharp@0.34.5)(terser@5.46.1)(tsx@4.20.6)(typescript@5.9.3)(ws@8.18.3)(yaml@2.8.3)':
+  '@directus/extensions-sdk@17.1.1(@types/node@22.19.17)(@unhead/vue@1.11.20(vue@3.5.24(typescript@6.0.3)))(deep-diff@1.0.2)(express@5.2.1)(graphql@16.12.0)(jiti@2.6.1)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pinia@2.3.1(typescript@6.0.3)(vue@3.5.24(typescript@6.0.3)))(pino@9.7.0)(sharp@0.34.5)(terser@5.46.1)(tsx@4.20.6)(typescript@6.0.3)(ws@8.18.3)(yaml@2.8.3)':
     dependencies:
-      '@directus/composables': 11.2.17(vue@3.5.24(typescript@5.9.3))
+      '@directus/composables': 11.2.17(vue@3.5.24(typescript@6.0.3))
       '@directus/constants': 14.3.0
-      '@directus/extensions': 3.0.23(deep-diff@1.0.2)(express@5.2.1)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)
-      '@directus/themes': 1.3.1(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))
-      '@directus/types': 15.0.1(deep-diff@1.0.2)(express@5.2.1)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)
-      '@directus/utils': 13.4.0(vue@3.5.24(typescript@5.9.3))
+      '@directus/extensions': 3.0.23(deep-diff@1.0.2)(express@5.2.1)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(vue@3.5.24(typescript@6.0.3))(ws@8.18.3)
+      '@directus/themes': 1.3.1(@unhead/vue@1.11.20(vue@3.5.24(typescript@6.0.3)))(pinia@2.3.1(typescript@6.0.3)(vue@3.5.24(typescript@6.0.3)))(vue@3.5.24(typescript@6.0.3))
+      '@directus/types': 15.0.1(deep-diff@1.0.2)(express@5.2.1)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(vue@3.5.24(typescript@6.0.3))(ws@8.18.3)
+      '@directus/utils': 13.4.0(vue@3.5.24(typescript@6.0.3))
       '@rollup/plugin-commonjs': 28.0.9(rollup@4.59.0)
       '@rollup/plugin-json': 6.1.0(rollup@4.59.0)
       '@rollup/plugin-node-resolve': 16.0.3(rollup@4.59.0)
       '@rollup/plugin-replace': 6.0.3(rollup@4.59.0)
       '@rollup/plugin-terser': 1.0.0(rollup@4.59.0)
       '@rollup/plugin-virtual': 3.0.2(rollup@4.59.0)
-      '@vitejs/plugin-vue': 6.0.1(vite@8.0.0(@types/node@22.19.17)(esbuild@0.26.0)(jiti@2.6.1)(terser@5.46.1)(tsx@4.20.6)(yaml@2.8.3))(vue@3.5.24(typescript@5.9.3))
+      '@vitejs/plugin-vue': 6.0.1(vite@8.0.0(@types/node@22.19.17)(esbuild@0.26.0)(jiti@2.6.1)(terser@5.46.1)(tsx@4.20.6)(yaml@2.8.3))(vue@3.5.24(typescript@6.0.3))
       chalk: 5.6.2
       commander: 14.0.2
       esbuild: 0.26.0
@@ -8940,10 +8940,10 @@ snapshots:
       ora: 8.2.0
       rollup: 4.59.0
       rollup-plugin-esbuild: 6.2.1(esbuild@0.26.0)(rollup@4.59.0)
-      rollup-plugin-styler: 2.0.0(rollup@4.59.0)(typescript@5.9.3)
+      rollup-plugin-styler: 2.0.0(rollup@4.59.0)(typescript@6.0.3)
       semver: 7.7.3
       vite: 8.0.0(@types/node@22.19.17)(esbuild@0.26.0)(jiti@2.6.1)(terser@5.46.1)(tsx@4.20.6)(yaml@2.8.3)
-      vue: 3.5.24(typescript@5.9.3)
+      vue: 3.5.24(typescript@6.0.3)
     transitivePeerDependencies:
       - '@types/node'
       - '@unhead/vue'
@@ -8980,11 +8980,11 @@ snapshots:
       - ws
       - yaml
 
-  '@directus/extensions@3.0.23(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)':
+  '@directus/extensions@3.0.23(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@6.0.3))(ws@8.18.3)':
     dependencies:
       '@directus/constants': 14.3.0
-      '@directus/types': 15.0.1(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)
-      '@directus/utils': 13.4.0(vue@3.5.24(typescript@5.9.3))
+      '@directus/types': 15.0.1(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@6.0.3))(ws@8.18.3)
+      '@directus/utils': 13.4.0(vue@3.5.24(typescript@6.0.3))
       '@types/express': 4.17.21
       fs-extra: 11.3.2
       lodash-es: 4.17.23
@@ -8992,7 +8992,7 @@ snapshots:
     optionalDependencies:
       knex: 3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))
       pino: 9.7.0
-      vue: 3.5.24(typescript@5.9.3)
+      vue: 3.5.24(typescript@6.0.3)
     transitivePeerDependencies:
       - aws-crt
       - better-sqlite3
@@ -9011,11 +9011,11 @@ snapshots:
       - tedious
       - ws
 
-  '@directus/extensions@3.0.23(deep-diff@1.0.2)(express@5.2.1)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)':
+  '@directus/extensions@3.0.23(deep-diff@1.0.2)(express@5.2.1)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(vue@3.5.24(typescript@6.0.3))(ws@8.18.3)':
     dependencies:
       '@directus/constants': 14.3.0
-      '@directus/types': 15.0.1(deep-diff@1.0.2)(express@5.2.1)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)
-      '@directus/utils': 13.4.0(vue@3.5.24(typescript@5.9.3))
+      '@directus/types': 15.0.1(deep-diff@1.0.2)(express@5.2.1)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(vue@3.5.24(typescript@6.0.3))(ws@8.18.3)
+      '@directus/utils': 13.4.0(vue@3.5.24(typescript@6.0.3))
       '@types/express': 4.17.21
       fs-extra: 11.3.2
       lodash-es: 4.17.23
@@ -9023,7 +9023,7 @@ snapshots:
     optionalDependencies:
       knex: 3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))
       pino: 9.7.0
-      vue: 3.5.24(typescript@5.9.3)
+      vue: 3.5.24(typescript@6.0.3)
     transitivePeerDependencies:
       - aws-crt
       - better-sqlite3
@@ -9044,10 +9044,10 @@ snapshots:
 
   '@directus/format-title@12.1.2': {}
 
-  '@directus/memory@3.1.6(vue@3.5.24(typescript@5.9.3))':
+  '@directus/memory@3.1.6(vue@3.5.24(typescript@6.0.3))':
     dependencies:
       '@directus/errors': 2.3.0
-      '@directus/utils': 13.4.0(vue@3.5.24(typescript@5.9.3))
+      '@directus/utils': 13.4.0(vue@3.5.24(typescript@6.0.3))
       '@sesamecare-oss/redlock': 1.4.0(ioredis@5.8.2)
       ioredis: 5.8.2
       lru-cache: 11.2.2
@@ -9056,15 +9056,15 @@ snapshots:
       - supports-color
       - vue
 
-  '@directus/pressure@3.0.21(vue@3.5.24(typescript@5.9.3))':
+  '@directus/pressure@3.0.21(vue@3.5.24(typescript@6.0.3))':
     dependencies:
-      '@directus/utils': 13.4.0(vue@3.5.24(typescript@5.9.3))
+      '@directus/utils': 13.4.0(vue@3.5.24(typescript@6.0.3))
     transitivePeerDependencies:
       - vue
 
-  '@directus/schema-builder@0.0.18(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)':
+  '@directus/schema-builder@0.0.18(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@6.0.3))(ws@8.18.3)':
     dependencies:
-      '@directus/types': 15.0.1(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)
+      '@directus/types': 15.0.1(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@6.0.3))(ws@8.18.3)
       lodash-es: 4.17.23
     transitivePeerDependencies:
       - aws-crt
@@ -9107,29 +9107,29 @@ snapshots:
     dependencies:
       openapi3-ts: 4.5.0
 
-  '@directus/storage-driver-azure@12.0.21(vue@3.5.24(typescript@5.9.3))':
+  '@directus/storage-driver-azure@12.0.21(vue@3.5.24(typescript@6.0.3))':
     dependencies:
       '@azure/storage-blob': 12.29.1
       '@directus/storage': 12.0.4
-      '@directus/utils': 13.4.0(vue@3.5.24(typescript@5.9.3))
+      '@directus/utils': 13.4.0(vue@3.5.24(typescript@6.0.3))
     transitivePeerDependencies:
       - supports-color
       - vue
 
-  '@directus/storage-driver-cloudinary@12.0.21(vue@3.5.24(typescript@5.9.3))':
+  '@directus/storage-driver-cloudinary@12.0.21(vue@3.5.24(typescript@6.0.3))':
     dependencies:
       '@directus/storage': 12.0.4
-      '@directus/utils': 13.4.0(vue@3.5.24(typescript@5.9.3))
+      '@directus/utils': 13.4.0(vue@3.5.24(typescript@6.0.3))
       p-queue: 8.1.0
       undici: 7.24.5
     transitivePeerDependencies:
       - vue
 
-  '@directus/storage-driver-gcs@12.0.21(encoding@0.1.13)(vue@3.5.24(typescript@5.9.3))':
+  '@directus/storage-driver-gcs@12.0.21(encoding@0.1.13)(vue@3.5.24(typescript@6.0.3))':
     dependencies:
       '@directus/constants': 14.3.0
       '@directus/storage': 12.0.4
-      '@directus/utils': 13.4.0(vue@3.5.24(typescript@5.9.3))
+      '@directus/utils': 13.4.0(vue@3.5.24(typescript@6.0.3))
       '@google-cloud/storage': 7.18.0(encoding@0.1.13)
     transitivePeerDependencies:
       - encoding
@@ -9140,12 +9140,12 @@ snapshots:
     dependencies:
       '@directus/storage': 12.0.4
 
-  '@directus/storage-driver-s3@12.1.7(vue@3.5.24(typescript@5.9.3))':
+  '@directus/storage-driver-s3@12.1.7(vue@3.5.24(typescript@6.0.3))':
     dependencies:
       '@aws-sdk/client-s3': 3.928.0
       '@aws-sdk/lib-storage': 3.928.0(@aws-sdk/client-s3@3.928.0)
       '@directus/storage': 12.0.4
-      '@directus/utils': 13.4.0(vue@3.5.24(typescript@5.9.3))
+      '@directus/utils': 13.4.0(vue@3.5.24(typescript@6.0.3))
       '@shopify/semaphore': 3.1.0
       '@smithy/node-http-handler': 4.4.5
       '@tus/utils': 0.6.0
@@ -9154,11 +9154,11 @@ snapshots:
       - aws-crt
       - vue
 
-  '@directus/storage-driver-supabase@3.0.21(vue@3.5.24(typescript@5.9.3))':
+  '@directus/storage-driver-supabase@3.0.21(vue@3.5.24(typescript@6.0.3))':
     dependencies:
       '@directus/constants': 14.3.0
       '@directus/storage': 12.0.4
-      '@directus/utils': 13.4.0(vue@3.5.24(typescript@5.9.3))
+      '@directus/utils': 13.4.0(vue@3.5.24(typescript@6.0.3))
       '@supabase/storage-js': 2.81.0
       tus-js-client: 4.3.1
       undici: 7.24.5
@@ -9169,19 +9169,19 @@ snapshots:
 
   '@directus/system-data@4.4.0': {}
 
-  '@directus/themes@1.3.1(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))':
+  '@directus/themes@1.3.1(@unhead/vue@1.11.20(vue@3.5.24(typescript@6.0.3)))(pinia@2.3.1(typescript@6.0.3)(vue@3.5.24(typescript@6.0.3)))(vue@3.5.24(typescript@6.0.3))':
     dependencies:
-      '@directus/utils': 13.4.0(vue@3.5.24(typescript@5.9.3))
-      '@unhead/vue': 1.11.20(vue@3.5.24(typescript@5.9.3))
+      '@directus/utils': 13.4.0(vue@3.5.24(typescript@6.0.3))
+      '@unhead/vue': 1.11.20(vue@3.5.24(typescript@6.0.3))
       decamelize: 6.0.1
       flat: 6.0.1
       lodash-es: 4.17.23
-      pinia: 2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))
-      vue: 3.5.24(typescript@5.9.3)
+      pinia: 2.3.1(typescript@6.0.3)(vue@3.5.24(typescript@6.0.3))
+      vue: 3.5.24(typescript@6.0.3)
 
   '@directus/tsconfig@4.0.0': {}
 
-  '@directus/types@15.0.1(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)':
+  '@directus/types@15.0.1(deep-diff@1.0.2)(express@4.21.2)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(mysql2@3.15.3)(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1))(vue@3.5.24(typescript@6.0.3))(ws@8.18.3)':
     dependencies:
       '@directus/ai': 1.3.1
       '@directus/constants': 14.3.0
@@ -9202,7 +9202,7 @@ snapshots:
       openapi3-ts: 4.5.0
       pino: 9.7.0
       sharp: 0.34.5
-      vue: 3.5.24(typescript@5.9.3)
+      vue: 3.5.24(typescript@6.0.3)
       ws: 8.18.3
     transitivePeerDependencies:
       - aws-crt
@@ -9215,7 +9215,7 @@ snapshots:
       - supports-color
       - tedious
 
-  '@directus/types@15.0.1(deep-diff@1.0.2)(express@5.2.1)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(vue@3.5.24(typescript@5.9.3))(ws@8.18.3)':
+  '@directus/types@15.0.1(deep-diff@1.0.2)(express@5.2.1)(graphql@16.12.0)(knex@3.1.0(mysql2@3.15.3)(pg@8.16.3)(sqlite3@5.1.7)(tedious@18.6.1(@azure/core-client@1.10.1)))(nodemailer@7.0.11)(openapi3-ts@4.5.0)(pg@8.16.3)(pino@9.7.0)(sharp@0.34.5)(vue@3.5.24(typescript@6.0.3))(ws@8.18.3)':
     dependencies:
       '@directus/ai': 1.3.1
       '@directus/constants': 14.3.0
@@ -9236,7 +9236,7 @@ snapshots:
       openapi3-ts: 4.5.0
       pino: 9.7.0
       sharp: 0.34.5
-      vue: 3.5.24(typescript@5.9.3)
+      vue: 3.5.24(typescript@6.0.3)
       ws: 8.18.3
     transitivePeerDependencies:
       - aws-crt
@@ -9260,7 +9260,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@directus/utils@13.4.0(vue@3.5.24(typescript@5.9.3))':
+  '@directus/utils@13.4.0(vue@3.5.24(typescript@6.0.3))':
     dependencies:
       '@directus/constants': 14.3.0
       '@directus/system-data': 4.4.0
@@ -9272,12 +9272,12 @@ snapshots:
       micromustache: 8.0.3
       zod: 4.1.12
     optionalDependencies:
-      vue: 3.5.24(typescript@5.9.3)
+      vue: 3.5.24(typescript@6.0.3)
 
-  '@directus/validation@2.0.21(vue@3.5.24(typescript@5.9.3))':
+  '@directus/validation@2.0.21(vue@3.5.24(typescript@6.0.3))':
     dependencies:
       '@directus/errors': 2.3.0
-      '@directus/utils': 13.4.0(vue@3.5.24(typescript@5.9.3))
+      '@directus/utils': 13.4.0(vue@3.5.24(typescript@6.0.3))
       joi: 18.0.1
     transitivePeerDependencies:
       - vue
@@ -11086,40 +11086,40 @@ snapshots:
     dependencies:
       '@types/node': 22.19.17
 
-  '@typescript-eslint/eslint-plugin@8.58.2(@typescript-eslint/parser@8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@5.9.3))(eslint@10.2.0(jiti@2.6.1))(typescript@5.9.3)':
+  '@typescript-eslint/eslint-plugin@8.58.2(@typescript-eslint/parser@8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.3))(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.2
-      '@typescript-eslint/parser': 8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@5.9.3)
+      '@typescript-eslint/parser': 8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.3)
       '@typescript-eslint/scope-manager': 8.58.2
-      '@typescript-eslint/type-utils': 8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@5.9.3)
-      '@typescript-eslint/utils': 8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@5.9.3)
+      '@typescript-eslint/type-utils': 8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.3)
+      '@typescript-eslint/utils': 8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.3)
       '@typescript-eslint/visitor-keys': 8.58.2
       eslint: 10.2.0(jiti@2.6.1)
       ignore: 7.0.5
       natural-compare: 1.4.0
-      ts-api-utils: 2.5.0(typescript@5.9.3)
-      typescript: 5.9.3
+      ts-api-utils: 2.5.0(typescript@6.0.3)
+      typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/parser@8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@5.9.3)':
+  '@typescript-eslint/parser@8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.3)':
     dependencies:
       '@typescript-eslint/scope-manager': 8.58.2
       '@typescript-eslint/types': 8.58.2
-      '@typescript-eslint/typescript-estree': 8.58.2(typescript@5.9.3)
+      '@typescript-eslint/typescript-estree': 8.58.2(typescript@6.0.3)
       '@typescript-eslint/visitor-keys': 8.58.2
       debug: 4.4.3
       eslint: 10.2.0(jiti@2.6.1)
-      typescript: 5.9.3
+      typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/project-service@8.58.2(typescript@5.9.3)':
+  '@typescript-eslint/project-service@8.58.2(typescript@6.0.3)':
     dependencies:
-      '@typescript-eslint/tsconfig-utils': 8.58.2(typescript@5.9.3)
+      '@typescript-eslint/tsconfig-utils': 8.58.2(typescript@6.0.3)
       '@typescript-eslint/types': 8.58.2
       debug: 4.4.3
-      typescript: 5.9.3
+      typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
@@ -11128,47 +11128,47 @@ snapshots:
       '@typescript-eslint/types': 8.58.2
       '@typescript-eslint/visitor-keys': 8.58.2
 
-  '@typescript-eslint/tsconfig-utils@8.58.2(typescript@5.9.3)':
+  '@typescript-eslint/tsconfig-utils@8.58.2(typescript@6.0.3)':
     dependencies:
-      typescript: 5.9.3
+      typescript: 6.0.3
 
-  '@typescript-eslint/type-utils@8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@5.9.3)':
+  '@typescript-eslint/type-utils@8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.3)':
     dependencies:
       '@typescript-eslint/types': 8.58.2
-      '@typescript-eslint/typescript-estree': 8.58.2(typescript@5.9.3)
-      '@typescript-eslint/utils': 8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@5.9.3)
+      '@typescript-eslint/typescript-estree': 8.58.2(typescript@6.0.3)
+      '@typescript-eslint/utils': 8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.3)
       debug: 4.4.3
       eslint: 10.2.0(jiti@2.6.1)
-      ts-api-utils: 2.5.0(typescript@5.9.3)
-      typescript: 5.9.3
+      ts-api-utils: 2.5.0(typescript@6.0.3)
+      typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
   '@typescript-eslint/types@8.58.2': {}
 
-  '@typescript-eslint/typescript-estree@8.58.2(typescript@5.9.3)':
+  '@typescript-eslint/typescript-estree@8.58.2(typescript@6.0.3)':
     dependencies:
-      '@typescript-eslint/project-service': 8.58.2(typescript@5.9.3)
-      '@typescript-eslint/tsconfig-utils': 8.58.2(typescript@5.9.3)
+      '@typescript-eslint/project-service': 8.58.2(typescript@6.0.3)
+      '@typescript-eslint/tsconfig-utils': 8.58.2(typescript@6.0.3)
       '@typescript-eslint/types': 8.58.2
       '@typescript-eslint/visitor-keys': 8.58.2
       debug: 4.4.3
       minimatch: 10.2.4
       semver: 7.7.4
       tinyglobby: 0.2.15
-      ts-api-utils: 2.5.0(typescript@5.9.3)
-      typescript: 5.9.3
+      ts-api-utils: 2.5.0(typescript@6.0.3)
+      typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/utils@8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@5.9.3)':
+  '@typescript-eslint/utils@8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.3)':
     dependencies:
       '@eslint-community/eslint-utils': 4.9.1(eslint@10.2.0(jiti@2.6.1))
       '@typescript-eslint/scope-manager': 8.58.2
       '@typescript-eslint/types': 8.58.2
-      '@typescript-eslint/typescript-estree': 8.58.2(typescript@5.9.3)
+      '@typescript-eslint/typescript-estree': 8.58.2(typescript@6.0.3)
       eslint: 10.2.0(jiti@2.6.1)
-      typescript: 5.9.3
+      typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
@@ -11200,13 +11200,13 @@ snapshots:
       '@unhead/schema': 1.11.20
       packrup: 0.1.2
 
-  '@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3))':
+  '@unhead/vue@1.11.20(vue@3.5.24(typescript@6.0.3))':
     dependencies:
       '@unhead/schema': 1.11.20
       '@unhead/shared': 1.11.20
       hookable: 5.5.3
       unhead: 1.11.20
-      vue: 3.5.24(typescript@5.9.3)
+      vue: 3.5.24(typescript@6.0.3)
 
   '@vercel/functions@1.6.0(@aws-sdk/credential-provider-web-identity@3.972.23)':
     optionalDependencies:
@@ -11214,11 +11214,11 @@ snapshots:
 
   '@vercel/oidc@3.1.0': {}
 
-  '@vitejs/plugin-vue@6.0.1(vite@8.0.0(@types/node@22.19.17)(esbuild@0.26.0)(jiti@2.6.1)(terser@5.46.1)(tsx@4.20.6)(yaml@2.8.3))(vue@3.5.24(typescript@5.9.3))':
+  '@vitejs/plugin-vue@6.0.1(vite@8.0.0(@types/node@22.19.17)(esbuild@0.26.0)(jiti@2.6.1)(terser@5.46.1)(tsx@4.20.6)(yaml@2.8.3))(vue@3.5.24(typescript@6.0.3))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.29
       vite: 8.0.0(@types/node@22.19.17)(esbuild@0.26.0)(jiti@2.6.1)(terser@5.46.1)(tsx@4.20.6)(yaml@2.8.3)
-      vue: 3.5.24(typescript@5.9.3)
+      vue: 3.5.24(typescript@6.0.3)
 
   '@vitest/expect@4.1.4':
     dependencies:
@@ -11309,11 +11309,11 @@ snapshots:
       '@vue/shared': 3.5.24
       csstype: 3.2.3
 
-  '@vue/server-renderer@3.5.24(vue@3.5.24(typescript@5.9.3))':
+  '@vue/server-renderer@3.5.24(vue@3.5.24(typescript@6.0.3))':
     dependencies:
       '@vue/compiler-ssr': 3.5.24
       '@vue/shared': 3.5.24
-      vue: 3.5.24(typescript@5.9.3)
+      vue: 3.5.24(typescript@6.0.3)
 
   '@vue/shared@3.5.24': {}
 
@@ -12035,14 +12035,14 @@ snapshots:
       object-assign: 4.1.1
       vary: 1.1.2
 
-  cosmiconfig@8.3.6(typescript@5.9.3):
+  cosmiconfig@8.3.6(typescript@6.0.3):
     dependencies:
       import-fresh: 3.3.1
       js-yaml: 4.1.1
       parse-json: 5.2.0
       path-type: 4.0.0
     optionalDependencies:
-      typescript: 5.9.3
+      typescript: 6.0.3
 
   crc-32@1.2.2: {}
 
@@ -12234,9 +12234,9 @@ snapshots:
 
   diff@8.0.4: {}
 
-  directus@11.17.1(@azure/core-client@1.10.1)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@opentelemetry/exporter-trace-otlp-http@0.202.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.1.0(@opentelemetry/api@1.9.0))(@types/node@22.19.17)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(braintrust@3.7.1(@aws-sdk/credential-provider-web-identity@3.972.23)(zod@4.1.12))(encoding@0.1.13)(jiti@2.6.1)(lodash@4.17.23)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(terser@5.46.1)(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))(yaml@2.8.3):
+  directus@11.17.1(@azure/core-client@1.10.1)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@opentelemetry/exporter-trace-otlp-http@0.202.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.1.0(@opentelemetry/api@1.9.0))(@types/node@22.19.17)(@unhead/vue@1.11.20(vue@3.5.24(typescript@6.0.3)))(braintrust@3.7.1(@aws-sdk/credential-provider-web-identity@3.972.23)(zod@4.1.12))(encoding@0.1.13)(jiti@2.6.1)(lodash@4.17.23)(pinia@2.3.1(typescript@6.0.3)(vue@3.5.24(typescript@6.0.3)))(terser@5.46.1)(typescript@6.0.3)(vue@3.5.24(typescript@6.0.3))(yaml@2.8.3):
     dependencies:
-      '@directus/api': 35.0.1(@azure/core-client@1.10.1)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@opentelemetry/exporter-trace-otlp-http@0.202.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.1.0(@opentelemetry/api@1.9.0))(@types/node@22.19.17)(@unhead/vue@1.11.20(vue@3.5.24(typescript@5.9.3)))(braintrust@3.7.1(@aws-sdk/credential-provider-web-identity@3.972.23)(zod@4.1.12))(encoding@0.1.13)(jiti@2.6.1)(lodash@4.17.23)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)))(terser@5.46.1)(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))(yaml@2.8.3)
+      '@directus/api': 35.0.1(@azure/core-client@1.10.1)(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0(@opentelemetry/api@1.9.0))(@opentelemetry/exporter-trace-otlp-http@0.202.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.1.0(@opentelemetry/api@1.9.0))(@types/node@22.19.17)(@unhead/vue@1.11.20(vue@3.5.24(typescript@6.0.3)))(braintrust@3.7.1(@aws-sdk/credential-provider-web-identity@3.972.23)(zod@4.1.12))(encoding@0.1.13)(jiti@2.6.1)(lodash@4.17.23)(pinia@2.3.1(typescript@6.0.3)(vue@3.5.24(typescript@6.0.3)))(terser@5.46.1)(typescript@6.0.3)(vue@3.5.24(typescript@6.0.3))(yaml@2.8.3)
       '@directus/update-check': 13.0.5
     transitivePeerDependencies:
       - '@arethetypeswrong/core'
@@ -14327,13 +14327,13 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  pinia@2.3.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3)):
+  pinia@2.3.1(typescript@6.0.3)(vue@3.5.24(typescript@6.0.3)):
     dependencies:
       '@vue/devtools-api': 6.6.4
-      vue: 3.5.24(typescript@5.9.3)
-      vue-demi: 0.14.10(vue@3.5.24(typescript@5.9.3))
+      vue: 3.5.24(typescript@6.0.3)
+      vue-demi: 0.14.10(vue@3.5.24(typescript@6.0.3))
     optionalDependencies:
-      typescript: 5.9.3
+      typescript: 6.0.3
     transitivePeerDependencies:
       - '@vue/composition-api'
 
@@ -14965,7 +14965,7 @@ snapshots:
       glob: 7.2.3
     optional: true
 
-  rolldown-plugin-dts@0.17.8(rolldown@1.0.0-beta.45)(typescript@5.9.3):
+  rolldown-plugin-dts@0.17.8(rolldown@1.0.0-beta.45)(typescript@6.0.3):
     dependencies:
       '@babel/generator': 7.29.1
       '@babel/parser': 7.29.2
@@ -14978,7 +14978,7 @@ snapshots:
       obug: 2.1.1
       rolldown: 1.0.0-beta.45
     optionalDependencies:
-      typescript: 5.9.3
+      typescript: 6.0.3
     transitivePeerDependencies:
       - oxc-resolver
 
@@ -15081,10 +15081,10 @@ snapshots:
     dependencies:
       rollup: 4.59.0
 
-  rollup-plugin-styler@2.0.0(rollup@4.59.0)(typescript@5.9.3):
+  rollup-plugin-styler@2.0.0(rollup@4.59.0)(typescript@6.0.3):
     dependencies:
       '@rollup/pluginutils': 5.3.0(rollup@4.59.0)
-      cosmiconfig: 8.3.6(typescript@5.9.3)
+      cosmiconfig: 8.3.6(typescript@6.0.3)
       cssnano: 7.1.3(postcss@8.5.8)
       fs-extra: 11.3.2
       icss-utils: 5.1.0(postcss@8.5.8)
@@ -15757,11 +15757,11 @@ snapshots:
 
   try@1.0.3: {}
 
-  ts-api-utils@2.5.0(typescript@5.9.3):
+  ts-api-utils@2.5.0(typescript@6.0.3):
     dependencies:
-      typescript: 5.9.3
+      typescript: 6.0.3
 
-  tsdown@0.15.11(typescript@5.9.3):
+  tsdown@0.15.11(typescript@6.0.3):
     dependencies:
       ansis: 4.2.0
       cac: 6.7.14
@@ -15771,7 +15771,7 @@ snapshots:
       empathic: 2.0.0
       hookable: 5.5.3
       rolldown: 1.0.0-beta.45
-      rolldown-plugin-dts: 0.17.8(rolldown@1.0.0-beta.45)(typescript@5.9.3)
+      rolldown-plugin-dts: 0.17.8(rolldown@1.0.0-beta.45)(typescript@6.0.3)
       semver: 7.7.4
       tinyexec: 1.0.4
       tinyglobby: 0.2.15
@@ -15779,7 +15779,7 @@ snapshots:
       unconfig: 7.5.0
       unrun: 0.2.34
     optionalDependencies:
-      typescript: 5.9.3
+      typescript: 6.0.3
     transitivePeerDependencies:
       - '@ts-macro/tsc'
       - '@typescript/native-preview'
@@ -15839,18 +15839,18 @@ snapshots:
 
   typedarray@0.0.7: {}
 
-  typescript-eslint@8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@5.9.3):
+  typescript-eslint@8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.3):
     dependencies:
-      '@typescript-eslint/eslint-plugin': 8.58.2(@typescript-eslint/parser@8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@5.9.3))(eslint@10.2.0(jiti@2.6.1))(typescript@5.9.3)
-      '@typescript-eslint/parser': 8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@5.9.3)
-      '@typescript-eslint/typescript-estree': 8.58.2(typescript@5.9.3)
-      '@typescript-eslint/utils': 8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@5.9.3)
+      '@typescript-eslint/eslint-plugin': 8.58.2(@typescript-eslint/parser@8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.3))(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.3)
+      '@typescript-eslint/parser': 8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.3)
+      '@typescript-eslint/typescript-estree': 8.58.2(typescript@6.0.3)
+      '@typescript-eslint/utils': 8.58.2(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.3)
       eslint: 10.2.0(jiti@2.6.1)
-      typescript: 5.9.3
+      typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
-  typescript@5.9.3: {}
+  typescript@6.0.3: {}
 
   unconfig-core@7.5.0:
     dependencies:
@@ -15992,19 +15992,19 @@ snapshots:
       ini: 1.3.8
       js-git: 0.7.8
 
-  vue-demi@0.14.10(vue@3.5.24(typescript@5.9.3)):
+  vue-demi@0.14.10(vue@3.5.24(typescript@6.0.3)):
     dependencies:
-      vue: 3.5.24(typescript@5.9.3)
+      vue: 3.5.24(typescript@6.0.3)
 
-  vue@3.5.24(typescript@5.9.3):
+  vue@3.5.24(typescript@6.0.3):
     dependencies:
       '@vue/compiler-dom': 3.5.24
       '@vue/compiler-sfc': 3.5.24
       '@vue/runtime-dom': 3.5.24
-      '@vue/server-renderer': 3.5.24(vue@3.5.24(typescript@5.9.3))
+      '@vue/server-renderer': 3.5.24(vue@3.5.24(typescript@6.0.3))
       '@vue/shared': 3.5.24
     optionalDependencies:
-      typescript: 5.9.3
+      typescript: 6.0.3
 
   web-streams-polyfill@3.3.3: {}
 
