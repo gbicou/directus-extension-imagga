@@ -50,7 +50,7 @@
     "rollup-plugin-node-externals": "8.1.2",
     "typescript": "5.9.3",
     "typescript-eslint": "8.60.0",
-    "vitest": "4.1.8",
+    "vitest": "4.1.9",
     "wiremock-captain": "4.1.3"
   },
   "peerDependencies": {
